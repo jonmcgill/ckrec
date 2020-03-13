@@ -1,5 +1,6 @@
 import Logo from './Logo';
-import { colors, fonts } from '../shared/styles';
+import LineBreak from './LineBreak';
+import { fonts } from '../shared/styles';
 
 export default function PageTitle() {
   return (
@@ -9,7 +10,7 @@ export default function PageTitle() {
         <span>Christ the King</span>
         <span>Anglican Church</span>
       </h1>
-      <hr />
+      <LineBreak />
       <p>
         Preserving, teaching, and living the historic Christian faith in
         communion with other branches of Christ’s Church to advance His Kingdom in all the earth.
@@ -35,13 +36,6 @@ export default function PageTitle() {
 
         h1 span {
           display: block;
-        }
-
-        hr {
-          width: 40%;
-          max-width: 400px;
-          border: none;
-          border-bottom: 2px solid ${colors.amber};
         }
 
         p {
