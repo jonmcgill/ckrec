@@ -1,11 +1,6 @@
 import { colors } from '../shared/styles';
 
-interface ILogo {
-  color?: string;
-  size?: string;
-}
-
-export default function Logo({ color = 'red', size = '60px' }: ILogo) {
+export default function Logo({ color = 'red', size = '60px' }) {
   return (
     <span>
       <svg viewBox="0 0 106 124">

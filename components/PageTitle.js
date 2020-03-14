@@ -42,7 +42,8 @@ export default function PageTitle() {
           position: relative;
           text-align: center;
           z-index: 3;
-          background: rgba(0, 46, 16, 0.8);
+          //background: rgba(0, 46, 16, 0.8);
+          background: rgba(10, 40, 25, 0.8);
           width: 100%;
           margin-top: 0;
           transition: margin-top 200ms ease-in-out;
@@ -73,6 +74,7 @@ export default function PageTitle() {
           color: ${colors.amber};
           font-family: ${fonts.serif};
           font-weight: bold;
+          font-size: 20px;
         }
 
         button {
@@ -126,9 +128,6 @@ function NavigationMenu({ open, toggleOpen }) {
         <ul>
           <li>
             Worship
-          </li>
-          <li>
-            Family
           </li>
           <li>
             Ministries

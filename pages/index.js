@@ -4,6 +4,7 @@ import PageTitle from '../components/PageTitle';
 import PageContent from '../components/PageContent';
 import LineBreak from '../components/LineBreak';
 import Space from '../components/Space';
+import Footer from '../components/Footer';
 
 import { fonts, colors } from '../shared/styles';
 import { services } from '../content/services';
@@ -22,19 +23,13 @@ export default function Index() {
           <Service key={serv.day} {...serv} />
         )}
       </PageContent>
+      <Footer />
     </div>
   )
 }
 
-interface IService {
-  key: string;
-  day: string;
-  services: {
-    name: string;
-    time: string;
-  }[]
-}
-function Service({ day, services }: IService) {
+
+function Service({ day, services }) {
   return (
     <div>
       <h3>{day}</h3>

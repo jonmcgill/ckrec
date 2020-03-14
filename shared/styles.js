@@ -9,5 +9,6 @@ export const colors = {
   black: '#122232',
   brown: '#8D6E63',
   cyan: '#B2EBF2',
+  darkGray: '#223c38',
   red: '#b71c1c',
 }

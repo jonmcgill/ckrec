@@ -1,12 +1,6 @@
 import { colors, fonts } from '../shared/styles';
 
-interface IPageContent {
-  children?: any;
-  bg?: string;
-  center?: boolean;
-}
-
-export default function PageContent({ bg, children, center }: IPageContent) {
+export default function PageContent({ bg, children, center }) {
   return (
     <>
       <section className="page-content">

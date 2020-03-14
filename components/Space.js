@@ -1,9 +1,4 @@
-interface ISpace {
-  x?: string;
-  y?: string;
-}
-
-export default function Space({ x, y }: ISpace) {
+export default function Space({ x, y }) {
   return (
     <>
       <div />

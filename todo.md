@@ -1,9 +1,11 @@
 ## TODO
 
-- [ ] Navigation menu
-- [ ] Footer
+- [x] Navigation menu
+- [x] Footer
 - [ ] Widescreen adaptations
 - [ ] Worship page
+- [ ] Themes
+- [ ] Notification box
 
 ## Pages
 
