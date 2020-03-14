@@ -5,18 +5,71 @@ import PageContent from '../components/PageContent';
 import LineBreak from '../components/LineBreak';
 import Space from '../components/Space';
 
+import { fonts, colors } from '../shared/styles';
+import { services } from '../content/services';
+
 export default function Index() {
   return (
     <div>
       <GlobalStyles />
       <PageBackground />
       <PageTitle />
-      <PageContent bg="rgba(255,255,255,0.9)" center>
+      <PageContent bg="rgba(255,255,255,0.95)" center>
         <h2>Weekly Services</h2>
         <LineBreak />
         <Space y="30px" />
-        <p>Foo bar bam</p>
+        {services.map(serv =>
+          <Service key={serv.day} {...serv} />
+        )}
       </PageContent>
+    </div>
+  )
+}
+
+interface IService {
+  key: string;
+  day: string;
+  services: {
+    name: string;
+    time: string;
+  }[]
+}
+function Service({ day, services }: IService) {
+  return (
+    <div>
+      <h3>{day}</h3>
+      <ul>
+        {services.map(serv =>
+          <li key={serv.name}>
+            <span>{serv.name}</span>
+            <span>{serv.time}</span>
+          </li>
+        )}
+      </ul>
+      <style jsx>{`
+        div {
+          text-align: left;
+          font-family: ${fonts.sans};
+          color: ${colors.black};
+          margin: 0 auto;
+          max-width: 600px;
+        }
+
+        h3 {
+          font-size: 16px;
+          font-weight: bold;
+        }
+
+        ul {
+          margin: 7px 0px 40px;
+        }
+
+        li {
+          display: flex;
+          line-height: 1.7;
+          justify-content: space-between;
+        }
+      `}</style>
     </div>
   )
 }

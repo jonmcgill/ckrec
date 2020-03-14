@@ -13,6 +13,14 @@ export default function GlobalStyles() {
         margin: 0;
         padding: 0;
       }
+
+      li {
+        list-style: none;
+      }
+
+      body.isNavOpen {
+        overflow: hidden;
+      }
     `}</style>
   )
 }

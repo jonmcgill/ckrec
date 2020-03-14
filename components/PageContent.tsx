@@ -15,7 +15,7 @@ export default function PageContent({ bg, children, center }: IPageContent) {
       <style jsx global>{`
         .page-content {
           background: ${bg};
-          padding: 60px 20px;
+          padding: 60px 30px;
           position: relative;
           z-index: 3;
           color: ${colors.black};

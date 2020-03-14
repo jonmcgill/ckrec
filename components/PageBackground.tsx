@@ -1,3 +1,4 @@
+// TODO: add theming for different seasons
 export default function PageBackground() {
   return (
     <>
@@ -9,6 +10,8 @@ export default function PageBackground() {
           background-position: center;
           background-repeat: no-repeat;
           position: fixed;
+          top: 0px;
+          left: 0px;
           height: 100vh;
           width: 100%;
           z-index: 1;
