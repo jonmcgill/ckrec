@@ -1,7 +1,6 @@
-import { colors, fonts } from '../shared/styles';
+import { fonts } from '../shared/styles';
 import Space from '../components/Space';
-
-const year = new Date().getFullYear();
+import util from '../shared/util';
 
 export default function Footer() {
   return (
@@ -54,14 +53,14 @@ export default function Footer() {
             </li>
           </ul>
           <copy>
-            &copy; {year}, Christ the King Anglican Church
+            &copy; {util.year()}, Christ the King Anglican Church
           </copy>
         </div>
       </footer>
       <style jsx>{`
         footer {
-          background: rgba(20, 45, 45, 0.97); // ${colors.darkGray};
-          color: white;
+          background: ${util.theme().bgFooter};
+          color: ${util.theme().text};
           font-family: ${fonts.sans};
           line-height: 1.6;
           padding: 60px 30px;
@@ -83,12 +82,12 @@ export default function Footer() {
         h4 {
           font-size: 18px;
           font-family: ${fonts.serif};
-          color: white;
+          color: ${util.theme().text};
           margin: 16px 0px;
         }
 
         a {
-          color: ${colors.amber};
+          color: ${util.theme().accent};
           text-decoration: none;
         }
 

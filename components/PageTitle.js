@@ -1,8 +1,9 @@
 import { useState } from 'react';
 import Logo from './Logo';
 import LineBreak from './LineBreak';
-import { colors, fonts } from '../shared/styles';
+import { fonts } from '../shared/styles';
 import { home } from '../content/home';
+import util from '../shared/util';
 
 export default function PageTitle() {
   const [open, setOpen] = useState(false);
@@ -24,26 +25,25 @@ export default function PageTitle() {
         <button onClick={toggleNav}>
           <span />
         </button>
-        <Logo color="amber" />
+        <Logo color={util.theme().accent} />
         <h1>
           <span>Christ the King</span>
           <span>Anglican Church</span>
         </h1>
-        <LineBreak />
+        <LineBreak color={util.theme().accent} />
         <p>{home.mission}</p>
-        <aside>{home.season}</aside>
+        <aside>{util.season()}, {util.year()}</aside>
       </header>
       <style jsx>{`
         header {
-          color: white;
+          color: ${util.theme().text};
           height: 100vh;
           padding: 20px;
           padding-top: 25vh;
           position: relative;
           text-align: center;
           z-index: 3;
-          //background: rgba(0, 46, 16, 0.8);
-          background: rgba(10, 40, 25, 0.8);
+          background: ${util.theme().bgTitle};
           width: 100%;
           margin-top: 0;
           transition: margin-top 200ms ease-in-out;
@@ -71,7 +71,7 @@ export default function PageTitle() {
         }
 
         aside {
-          color: ${colors.amber};
+          color: ${util.theme().accent};
           font-family: ${fonts.serif};
           font-weight: bold;
           font-size: 20px;
@@ -94,7 +94,7 @@ export default function PageTitle() {
         button span {
           display: block;
           height: 2px;
-          background: white;
+          background: ${util.theme().text};
           position: relative;
           margin: 18px auto;
           width: 20px;
@@ -106,7 +106,7 @@ export default function PageTitle() {
           display: block;
           position: relative;
           height: 2px;
-          background: white;
+          background: ${util.theme().text};
         }
 
         button span:after {
@@ -142,7 +142,7 @@ function NavigationMenu({ open, toggleOpen }) {
       </nav>
       <style jsx>{`
         nav {
-          background: rgba(0,0,0,0.95);
+          background: ${util.theme().bgNav};
           height: 100vh;
           left: 0px;
           top: 0px;
@@ -164,7 +164,7 @@ function NavigationMenu({ open, toggleOpen }) {
         }
 
         li {
-          color: white;
+          color: ${util.theme().text};
           font-family: ${fonts.serif};
           font-size: 32px;
           margin: 20px 0;
@@ -175,7 +175,7 @@ function NavigationMenu({ open, toggleOpen }) {
           padding: 0;
           border: 0;
           cursor: pointer;
-          color: white;
+          color: ${util.theme().text};
           background: transparent;
           position: absolute;
           left: 40px;
