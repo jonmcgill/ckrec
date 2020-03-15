@@ -55,7 +55,7 @@ function Service({ day, services }) {
 
         li {
           display: flex;
-          line-height: 1.7;
+          margin: 0 !important;
           justify-content: space-between;
         }
       `}</style>

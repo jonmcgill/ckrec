@@ -40,13 +40,13 @@ export default function Footer() {
           <h4>Links</h4>
           <ul className="links">
             <li>
-              <a>Worship</a>
+              <a>Service Times</a>
             </li>
             <li>
-              <a>Ministries</a>
+              <a>Clergy and Staff</a>
             </li>
             <li>
-              <a>Leadership</a>
+              <a>Children and Worship</a>
             </li>
             <li>
               <a>Sunday Schedules</a>

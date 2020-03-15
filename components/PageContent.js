@@ -1,4 +1,5 @@
 import { colors, fonts } from '../shared/styles';
+import util from '../shared/util';
 
 export default function PageContent({ bg, children, center, ...rest }) {
   return (
@@ -28,11 +29,21 @@ export default function PageContent({ bg, children, center, ...rest }) {
           margin-bottom: 30px;
         }
 
-        .page-content p {
+        .page-content p,
+        .page-content li {
           font-family: ${fonts.sans};
-          font-size: 18px;
-          line-height: 1.6;
+          font-size: 16px;
+          line-height: 1.7;
           margin-bottom: 30px;
+        }
+
+        .page-content li {
+          list-style: disc;
+          margin-left: 22px;
+        }
+
+        .page-content a {
+          color: ${util.theme().accent};
         }
       `}</style>
     </>
