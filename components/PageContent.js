@@ -1,5 +1,6 @@
 import { colors, fonts } from '../shared/styles';
 import util from '../shared/util';
+import config from '../shared/config';
 
 export default function PageContent({ bg, children, center, ...rest }) {
   return (
@@ -20,7 +21,7 @@ export default function PageContent({ bg, children, center, ...rest }) {
         }
 
         .page-content > div {
-          max-width: 600px;
+          max-width: ${config.contentMaxWidth};
           margin: 0 auto;
         }
 

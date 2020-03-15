@@ -1,6 +1,7 @@
 import { fonts } from '../shared/styles';
 import Space from '../components/Space';
 import util from '../shared/util';
+import config from '../shared/config';
 
 export default function Footer() {
   return (
@@ -52,9 +53,9 @@ export default function Footer() {
               <a>Sunday Schedules</a>
             </li>
           </ul>
-          <copy>
+          <span className="copyright">
             &copy; {util.year()}, Christ the King Anglican Church
-          </copy>
+          </span>
         </div>
       </footer>
       <style jsx>{`
@@ -69,7 +70,7 @@ export default function Footer() {
         }
 
         footer > div {
-          max-width: 600px;
+          max-width: ${config.contentMaxWidth};
           margin: 0 auto;
         }
 
@@ -96,7 +97,7 @@ export default function Footer() {
           padding: 5px 0px;
         }
 
-        copy {
+        .copyright {
           display: block;
           margin-top: 60px;
           opacity: 0.6;

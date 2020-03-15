@@ -1,17 +1,17 @@
 import { backgroundImages, seasons } from './themes';
-import flags from './flags';
+import config from './config';
 
 const year = new Date().getFullYear();
 
 export default {
   background() {
-    return backgroundImages[flags.season];
+    return backgroundImages[config.season];
   },
   season() {
-    return flags.season;
+    return config.season;
   },
   theme() {
-    return seasons[flags.season];
+    return seasons[config.season];
   },
   year() {
     return year

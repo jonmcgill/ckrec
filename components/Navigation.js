@@ -1,6 +1,7 @@
 import { useRouter } from 'next/router';
-import util from '../shared/util';
 import { fonts } from '../shared/styles';
+import util from '../shared/util';
+import config from '../shared/config';
 
 export default function Navigation({ open, toggleOpen }) {
   const router = useRouter();
@@ -34,13 +35,17 @@ export default function Navigation({ open, toggleOpen }) {
               </a>
             </li>
             <li>
-              <a>Holy Communion Walkthrough</a>
+              <a href="/holy-communion" onClick={navigate('/holy-communion')}>
+                Holy Communion: A Summary
+              </a>
             </li>
           </ul>
           <h4>Ministries</h4>
           <ul>
             <li>
-              <a>Church Education</a>
+              <a href="/sunday-school" onClick={navigate('/sunday-school')}>
+                Sunday School
+              </a>
             </li>
             <li>
               <a>Dominion Academy</a>
@@ -85,7 +90,7 @@ export default function Navigation({ open, toggleOpen }) {
         }
 
         nav > div {
-          max-width: 600px;
+          max-width: ${config.contentMaxWidth};
           margin: 0 auto;
         }
 
