@@ -21,6 +21,14 @@ export default function GlobalStyles() {
       body.isNavOpen {
         overflow: hidden;
       }
+
+      a {
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
     `}</style>
   )
 }

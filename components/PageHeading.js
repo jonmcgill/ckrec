@@ -1,11 +1,13 @@
 import { useState } from 'react';
+import Link from 'next/link';
 import Logo from './Logo';
 import LineBreak from './LineBreak';
+import Navigation from './Navigation';
 import { fonts } from '../shared/styles';
 import { home } from '../content/home';
 import util from '../shared/util';
 
-export default function PageTitle() {
+export default function PageHeading({ isHome, title }) {
   const [open, setOpen] = useState(false);
 
   function toggleNav() {
@@ -20,26 +22,44 @@ export default function PageTitle() {
 
   return (
     <>
-      <NavigationMenu open={open} toggleOpen={toggleNav} />
+      <Navigation open={open} toggleOpen={toggleNav} />
       <header className={open ? 'isOpen' : null}>
         <button onClick={toggleNav}>
           <span />
         </button>
-        <Logo color={util.theme().accent} />
-        <h1>
-          <span>Christ the King</span>
-          <span>Anglican Church</span>
-        </h1>
+        {isHome && <Logo color={util.theme().accent} />}
+        {!isHome && (
+          <div className="subpage-logo">
+            <Link href="/">
+              <a>
+                <Logo color={util.theme().accent} size="35px" />
+              </a>
+            </Link>
+          </div>
+        )}
+        {isHome && (
+          <h1>
+            <span>Christ the King</span>
+            <span>Anglican Church</span>
+          </h1>
+        )}
+        {!isHome && (
+          <h1>{title}</h1>
+        )}
         <LineBreak color={util.theme().accent} />
-        <p>{home.mission}</p>
-        <aside>{util.season()}, {util.year()}</aside>
+        {isHome && (
+          <>
+            <p>{home.mission}</p>
+            <aside>{util.season()}, {util.year()}</aside>
+          </>
+        )}
       </header>
       <style jsx>{`
         header {
           color: ${util.theme().text};
-          height: 100vh;
+          height: ${isHome ? '100vh' : '50vh'};
           padding: 20px;
-          padding-top: 25vh;
+          padding-top: ${isHome ? '25vh' : '14vh'};
           position: relative;
           text-align: center;
           z-index: 3;
@@ -116,72 +136,9 @@ export default function PageTitle() {
         button span:before {
           top: -7px;
         }
-      `}</style>
-    </>
-  )
-}
 
-function NavigationMenu({ open, toggleOpen }) {
-  return (
-    <>
-      <nav className={open ? 'isOpen' : null}>
-        <ul>
-          <li>
-            Worship
-          </li>
-          <li>
-            Ministries
-          </li>
-          <li>
-            Leadership
-          </li>
-        </ul>
-        <button onClick={toggleOpen}>
-          &#10005;
-        </button>
-      </nav>
-      <style jsx>{`
-        nav {
-          background: ${util.theme().bgNav};
-          height: 100vh;
-          left: 0px;
-          top: 0px;
-          width: 100%;
-          position: fixed;
-          transform: translateY(-100%);
-          transition: transform 200ms ease-in-out;
-          z-index: 1;
-        }
-
-        nav.isOpen {
-          transform: translateY(0px);
-        }
-
-        ul {
-          padding: 40px;
-          margin: 0 auto;
-          max-width: 400px;
-        }
-
-        li {
-          color: ${util.theme().text};
-          font-family: ${fonts.serif};
-          font-size: 32px;
-          margin: 20px 0;
-        }
-
-        button {
-          appearance: none;
-          padding: 0;
-          border: 0;
-          cursor: pointer;
-          color: ${util.theme().text};
-          background: transparent;
-          position: absolute;
-          left: 40px;
-          bottom: 40px;
-          font-size: 20px;
-          font-weight: bold;
+        .subpage-logo {
+          text-align: center;
         }
       `}</style>
     </>

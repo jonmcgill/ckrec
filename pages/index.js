@@ -1,10 +1,7 @@
-import GlobalStyles from '../components/GlobalStyles';
-import PageBackground from '../components/PageBackground';
-import PageTitle from '../components/PageTitle';
 import PageContent from '../components/PageContent';
 import LineBreak from '../components/LineBreak';
 import Space from '../components/Space';
-import Footer from '../components/Footer';
+import Page from '../components/Page';
 import util from '../shared/util';
 
 import { fonts, colors } from '../shared/styles';
@@ -12,11 +9,8 @@ import { services } from '../content/services';
 
 export default function Index() {
   return (
-    <div>
-      <GlobalStyles />
-      <PageBackground />
-      <PageTitle />
-      <PageContent bg="rgba(255,255,255,0.95)" center>
+    <Page isHome>
+      <PageContent bg="rgba(255,255,255,0.95)" center id="services">
         <h2>Weekly Services</h2>
         <LineBreak color={util.theme().accent} />
         <Space y="30px" />
@@ -24,8 +18,7 @@ export default function Index() {
           <Service key={serv.day} {...serv} />
         )}
       </PageContent>
-      <Footer />
-    </div>
+    </Page>
   )
 }
 
@@ -48,7 +41,7 @@ function Service({ day, services }) {
           font-family: ${fonts.sans};
           color: ${colors.black};
           margin: 0 auto;
-          max-width: 600px;
+          max-width: 400px;
         }
 
         h3 {
