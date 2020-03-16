@@ -48,7 +48,7 @@ export default function ClergyAndStaff() {
           }
 
           li {
-            margin-bottom: 8px;
+            margin-bottom: 8px !important;
           }
         `}</style>
       </PageContent>

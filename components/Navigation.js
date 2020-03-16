@@ -71,7 +71,9 @@ export default function Navigation({ open, toggleOpen }) {
               </a>
             </li>
             <li>
-              <a>Reformed Episcopal Church</a>
+              <a href="/rec" onClick={navigate('/rec')}>
+                Reformed Episcopal Church
+              </a>
             </li>
           </ul>
           <button onClick={toggleOpen}>
