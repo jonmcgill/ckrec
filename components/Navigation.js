@@ -66,7 +66,9 @@ export default function Navigation({ open, toggleOpen }) {
           <h4>Leadership</h4>
           <ul>
             <li>
-              <a>Clergy and Staff</a>
+              <a href="/clergy-and-staff" onClick={navigate('/clergy-and-staff')}>
+                Clergy and Staff
+              </a>
             </li>
             <li>
               <a>Reformed Episcopal Church</a>
