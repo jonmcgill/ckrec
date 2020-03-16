@@ -5,7 +5,7 @@
 - [x] Theme system
 - [x] First Subpage
 - [x] Finish Worship pages
-- [ ] Finish Ministries page
+- [x] Finish Ministries page
 - [ ] Finish Clergy and Staff page
 - [ ] Finish REC page
 - [ ] Menu toggle button in center
@@ -21,12 +21,12 @@
 
 Worship
   - Service Times (/#services)
-  - Thinking Liturgically (/thinking-liturgically)
+  - Liturgical Worship (/lilturgy)
   - Children and Worship (/children-and-worship)
-  - Our Holy Communion Service (/holy-communion)
+  - Holy Communion: A Summary (/holy-communion)
 
 Ministries
-  - Church Education
+  - Sunday School
   - Dominion Academy
   - No Longer Strangers
   - St. Lazarus Mission

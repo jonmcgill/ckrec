@@ -48,13 +48,19 @@ export default function Navigation({ open, toggleOpen }) {
               </a>
             </li>
             <li>
-              <a>Dominion Academy</a>
+              <a href="/dominion-academy" onClick={navigate('/dominion-academy')}>
+                Dominion Academy
+              </a>
             </li>
             <li>
-              <a>No Longer Strangers</a>
+              <a href="/no-longer-strangers" onClick={navigate('/no-longer-strangers')}>
+                No Longer Strangers
+              </a>
             </li>
             <li>
-              <a>St. Lazarus Mission</a>
+              <a href="/st-lazarus" onClick={navigate('/st-lazarus')}>
+                St. Lazarus Mission
+              </a>
             </li>
           </ul>
           <h4>Leadership</h4>
@@ -78,6 +84,7 @@ export default function Navigation({ open, toggleOpen }) {
           left: 0px;
           top: 0px;
           width: 100%;
+          overflow: auto;
           position: fixed;
           padding: 40px;
           transform: translateY(-100%);
@@ -120,8 +127,9 @@ export default function Navigation({ open, toggleOpen }) {
           color: ${util.theme().text};
           background: transparent;
           position: absolute;
-          left: 40px;
-          bottom: 40px;
+          left: 50%;
+          transform: translateX(-50%);
+          bottom: 28px;
           font-size: 20px;
           font-weight: bold;
         }

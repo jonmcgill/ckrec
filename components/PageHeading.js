@@ -17,6 +17,7 @@ export default function PageHeading({ isHome, title }) {
     } else {
       document.body.classList.add('isNavOpen');
       setOpen(true);
+      window.scrollTo(0, 0);
     }
   }
 
@@ -24,9 +25,6 @@ export default function PageHeading({ isHome, title }) {
     <>
       <Navigation open={open} toggleOpen={toggleNav} />
       <header className={open ? 'isOpen' : null}>
-        <button onClick={toggleNav}>
-          <span />
-        </button>
         {isHome && <Logo color={util.theme().accent} />}
         {!isHome && (
           <div className="subpage-logo">
@@ -53,13 +51,16 @@ export default function PageHeading({ isHome, title }) {
             <aside>{util.season()}, {util.year()}</aside>
           </>
         )}
+        <button onClick={toggleNav}>
+          <span />
+        </button>
       </header>
       <style jsx>{`
         header {
           color: ${util.theme().text};
           height: ${isHome ? '100vh' : '50vh'};
           padding: 20px;
-          padding-top: ${isHome ? '25vh' : '14vh'};
+          padding-top: ${isHome ? '20vh' : '14vh'};
           position: relative;
           text-align: center;
           z-index: 3;
@@ -107,8 +108,11 @@ export default function PageHeading({ isHome, title }) {
           height: 40px;
           background: transparent;
           z-index: 1;
-          left: 28px;
-          top: 28px;
+          // left: 28px;
+          // top: 28px;
+          left: 50%;
+          transform: translateX(-50%);
+          bottom: 28px;
         }
 
         button span {
