@@ -137,6 +137,20 @@ export default function Navigation({ open, toggleOpen }) {
           font-size: 20px;
           font-weight: bold;
         }
+
+        @media screen and (min-width: 800px) {
+          h4 {
+            font-size: 30px;
+          }
+
+          li a {
+            font-size: 20px;
+          }
+
+          button {
+            bottom: 40px;
+          }
+        }
       `}</style>
     </>
   )

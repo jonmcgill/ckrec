@@ -1,5 +1,6 @@
 import Page from '../components/Page';
 import PageContent from '../components/PageContent';
+import Cross from '../components/Cross';
 
 export default function ChildrenAndWorship() {
   return (
@@ -64,6 +65,7 @@ export default function ChildrenAndWorship() {
             recently released catechism designed for the renewal of Anglican catechetical practice.
           </li>
         </ul>
+        <Cross />
       </PageContent>
     </Page>
   )

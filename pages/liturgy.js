@@ -1,5 +1,6 @@
 import Page from '../components/Page';
 import PageContent from '../components/PageContent';
+import Cross from '../components/Cross';
 
 export default function Liturgy() {
   return (
@@ -116,6 +117,7 @@ export default function Liturgy() {
           to us and is received through the cross. To make the sign of the cross can help us focus our thoughts, our emotions,
           and our lives more clearly on the nature of our relationship with God (Galatians 2:20).
         </p>
+        <Cross />
       </PageContent>
     </Page>
   )

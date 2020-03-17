@@ -1,6 +1,6 @@
 import { colors } from '../shared/styles';
 
-export default function Logo({ color = 'red', size = '60px' }) {
+export default function Logo({ color = 'red', size = '60px', sizeLg = '80px' }) {
   return (
     <span>
       <svg viewBox="0 0 106 124">
@@ -14,6 +14,12 @@ export default function Logo({ color = 'red', size = '60px' }) {
       svg {
         fill: ${colors[color] || color};
         width: ${size};
+      }
+
+      @media screen and (min-width: 800px) {
+        svg {
+          width: ${sizeLg};
+        }
       }
     `}</style>
     </span>

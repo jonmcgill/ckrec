@@ -6,7 +6,7 @@ export default function ClergyAndStaff() {
   return (
     <Page title="Clergy and Staff">
       <PageContent>
-        <h2>Bishops</h2>
+        <h2>Bishop</h2>
         <p>
           <img src="/img/bp-manto.png" alt="Peter Manto, Bishop Ordinary" />The Rt. Rev. Peter Manto is rector of Trinity Church and Bishop Ordinary of the REC's Diocese of the Central States. Bp. Manto has been a parish pastor for over 40 years. He was the church-planter for the non-denominational church which became Trinity Church and guided its move into the Reformed Episcopal Church. Bp. Manto has been married to his wife Janice for over 40 years. They have four adult children and 13 grandchildren.
         </p>
@@ -19,14 +19,12 @@ export default function ClergyAndStaff() {
           <li>Jenny Downey, Parish Administrator</li>
           <li>Amanda McGill, Music Director</li>
         </ul>
-        <Space y="20px" />
         <h2>Parish Council</h2>
         <ul>
           <li>Fr. Wayne McNamara, Rector</li>
           <li>Jeremy Downey, Junior Warden</li>
           <li>Mike McDermott, Senior Warden</li>
         </ul>
-        <Space y="20px" />
         <h2>Parish Vestry</h2>
         <ul>
           <li>Jeremy Downey, Junior Warden</li>

@@ -17,6 +17,11 @@ export default function Index() {
         {services.map(serv =>
           <Service key={serv.day} {...serv} />
         )}
+        <style jsx>{`
+          h2 {
+            margin-top: 0 !important;
+          }
+        `}</style>
       </PageContent>
     </Page>
   )
@@ -57,6 +62,16 @@ function Service({ day, services }) {
           display: flex;
           margin: 0 !important;
           justify-content: space-between;
+        }
+
+        @media screen and (min-width: 800px) {
+          div {
+            max-width: 600px;
+          }
+
+          h3 {
+            font-size: 20px;
+          }
         }
       `}</style>
     </div>

@@ -30,7 +30,7 @@ export default function PageHeading({ isHome, title }) {
           <div className="subpage-logo">
             <Link href="/">
               <a>
-                <Logo color={util.theme().accent} size="35px" />
+                <Logo color={util.theme().accent} size="35px" sizeLg="60px" />
               </a>
             </Link>
           </div>
@@ -60,7 +60,7 @@ export default function PageHeading({ isHome, title }) {
           color: ${util.theme().text};
           height: ${isHome ? '100vh' : '50vh'};
           padding: 20px;
-          padding-top: ${isHome ? '20vh' : '14vh'};
+          padding-top: ${isHome ? '16vh' : '8vh'};
           position: relative;
           text-align: center;
           z-index: 3;
@@ -77,11 +77,12 @@ export default function PageHeading({ isHome, title }) {
         h1 {
           font-family: ${fonts.serif};
           line-height: 1.1;
-          padding: 20px 0;
+          padding: 50px 0 20px;
         }
 
         h1 span {
           display: block;
+          margin: 0 5px;
         }
 
         p, aside {
@@ -108,8 +109,6 @@ export default function PageHeading({ isHome, title }) {
           height: 40px;
           background: transparent;
           z-index: 1;
-          // left: 28px;
-          // top: 28px;
           left: 50%;
           transform: translateX(-50%);
           bottom: 28px;
@@ -143,6 +142,36 @@ export default function PageHeading({ isHome, title }) {
 
         .subpage-logo {
           text-align: center;
+        }
+
+        @media screen and (min-width: 800px) {
+          h1 {
+            font-size: 42px;
+          }
+
+          h1 span {
+            display: inline-block;
+            margin: 30px 5px 20px;
+          }
+
+          p, aside {
+            max-width: 500px;
+          }
+
+          p {
+            font-size: 18px;
+            margin-top: 30px;
+            line-height: 1.8;
+          }
+
+          aside {
+            font-size: 22px;
+            margin-top: 60px;
+          }
+
+          button {
+            bottom: 40px;
+          }
         }
       `}</style>
     </>

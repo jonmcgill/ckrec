@@ -27,7 +27,11 @@ export default function PageContent({ bg, children, center, ...rest }) {
 
         .page-content h2 {
           font-family: ${fonts.serif};
-          margin-bottom: 30px;
+          margin: 50px 0 30px;
+        }
+
+        .page-content h2:first-child {
+          margin-top: 0;
         }
 
         .page-content p,
@@ -45,6 +49,24 @@ export default function PageContent({ bg, children, center, ...rest }) {
 
         .page-content a {
           color: ${util.theme().accent};
+          font-family: ${fonts.sans};
+        }
+
+        @media screen and (min-width: 800px) {
+          .page-content {
+            padding: 80px 30px;
+          }
+
+          .page-content p,
+          .page-content li {
+            font-size: 18px;
+            line-height: 1.9;
+          }
+
+          .page-content h2 {
+            font-size: 28px;
+            margin: 70px 0 30px;
+          }
         }
       `}</style>
     </>

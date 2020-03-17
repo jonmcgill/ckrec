@@ -1,5 +1,6 @@
 import Page from '../components/Page';
 import PageContent from '../components/PageContent';
+import Cross from '../components/Cross';
 
 export default function HolyCommunionWalkthrough() {
   return (
@@ -246,6 +247,7 @@ export default function HolyCommunionWalkthrough() {
           the world. We shine as lights before all men to bring honour and glory to our Lord
           Jesus Christ.
         </p>
+        <Cross />
       </PageContent>
     </Page>
   )

@@ -1,19 +1,19 @@
-import { backgroundImages, seasons } from './themes';
+import { seasons } from './themes';
 import config from './config';
 
 const year = new Date().getFullYear();
 
 export default {
   background() {
-    return backgroundImages[config.season];
+    return seasons[config.season].bg;
   },
   season() {
     return config.season;
   },
   theme() {
-    return seasons[config.season];
+    return seasons[config.season].theme;
   },
   year() {
     return year
-  }
+  },
 }
