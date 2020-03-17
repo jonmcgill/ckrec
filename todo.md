@@ -1,12 +1,15 @@
 ## TODO
 
-- [ ] Fix: Put menu toggle at top-right of heading
-- [ ] Fix: Do not 
+- [x] Fix: Put menu toggle at top-right of heading
+- [ ] Fix: Do not forbid scrolling in menu
+- [ ] Fix: Do navigation menu differently
 - [ ] Tie seasons to automatic date system
+
 - [ ] Advent bg
 - [ ] Christmas bg
 - [ ] Epiphany bg
 - [ ] Gesimtide bg
+
 - [x] Easter bg
 - [x] White theme
 - [x] Blue theme

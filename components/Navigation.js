@@ -93,7 +93,7 @@ export default function Navigation({ open, toggleOpen }) {
           padding: 40px;
           transform: translateY(-100%);
           transition: transform 200ms ease-in-out;
-          z-index: 1;
+          z-index: 4;
         }
 
         nav.isOpen {
@@ -131,9 +131,8 @@ export default function Navigation({ open, toggleOpen }) {
           color: ${util.theme().text};
           background: transparent;
           position: absolute;
-          left: 50%;
-          transform: translateX(-50%);
-          bottom: 28px;
+          right: 40px;
+          top: 40px;
           font-size: 20px;
           font-weight: bold;
         }

@@ -17,7 +17,6 @@ export default function PageHeading({ isHome, title }) {
     } else {
       document.body.classList.add('isNavOpen');
       setOpen(true);
-      window.scrollTo(0, 0);
     }
   }
 
@@ -60,7 +59,7 @@ export default function PageHeading({ isHome, title }) {
           color: ${util.theme().text};
           height: ${isHome ? '100vh' : '50vh'};
           padding: 20px;
-          padding-top: ${isHome ? '16vh' : '8vh'};
+          padding-top: ${isHome ? '14vh' : '6vh'};
           position: relative;
           text-align: center;
           z-index: 3;
@@ -70,14 +69,11 @@ export default function PageHeading({ isHome, title }) {
           transition: margin-top 200ms ease-in-out;
         }
 
-        header.isOpen {
-          margin-top: 100vh;
-        }
-
         h1 {
           font-family: ${fonts.serif};
+          font-size: 28px;
           line-height: 1.1;
-          padding: 50px 0 20px;
+          padding: 30px 0 10px;
         }
 
         h1 span {
@@ -103,15 +99,16 @@ export default function PageHeading({ isHome, title }) {
           appearance: none;
           border: none;
           cursor: pointer;
-          position: absolute;
+          // position: absolute;
           padding: 0;
+          margin-top: 20px;
           width: 40px;
           height: 40px;
           background: transparent;
           z-index: 1;
-          left: 50%;
-          transform: translateX(-50%);
-          bottom: 28px;
+          // right: 30px;
+          // top: 30px;
+
         }
 
         button span {

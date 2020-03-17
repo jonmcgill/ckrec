@@ -8,6 +8,7 @@ export default function App({ Component, pageProps }) {
         <link rel="icon" type="image/png" href="/img/favicon32x32.png" />
         <title>Christ the King Anglican Church</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta name="format-detection" content="telephone=no" />
         <meta
           name="description"
           content="Preserving, teaching, and living the historic Christian faith in communion 
