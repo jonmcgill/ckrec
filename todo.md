@@ -1,8 +1,7 @@
 ## TODO
 
 - [x] Fix: Put menu toggle at top-right of heading
-- [ ] Fix: Do not forbid scrolling in menu
-- [ ] Fix: Do navigation menu differently
+- [x] Fix: Do navigation menu differently
 - [ ] Tie seasons to automatic date system
 
 - [ ] Advent bg
