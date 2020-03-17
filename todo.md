@@ -1,14 +1,17 @@
 ## TODO
 
-- [x] Easter bg
-- [x] White theme
-- [x] Blue theme
-- [x] Favicon
-- [ ] Head element with relevant SEO meta tags
+- [ ] Fix: Put menu toggle at top-right of heading
+- [ ] Fix: Do not 
+- [ ] Tie seasons to automatic date system
 - [ ] Advent bg
 - [ ] Christmas bg
 - [ ] Epiphany bg
 - [ ] Gesimtide bg
+- [x] Easter bg
+- [x] White theme
+- [x] Blue theme
+- [x] Favicon
+- [x] Head element with relevant SEO meta tags
 - [x] Navigation menu
 - [x] Footer
 - [x] Theme system
