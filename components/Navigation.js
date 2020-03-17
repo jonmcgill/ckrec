@@ -76,10 +76,10 @@ export default function Navigation({ open, toggleOpen }) {
               </a>
             </li>
           </ul>
-          <button onClick={toggleOpen}>
-            &#10005;
-          </button>
         </div>
+        <button onClick={toggleOpen}>
+          &#10005;
+        </button>
       </nav>
       <style jsx>{`
         nav {
@@ -144,10 +144,6 @@ export default function Navigation({ open, toggleOpen }) {
 
           li a {
             font-size: 20px;
-          }
-
-          button {
-            bottom: 40px;
           }
         }
       `}</style>

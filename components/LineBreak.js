@@ -7,7 +7,7 @@ export default function LineBreak({ color = 'amber' }) {
       <style jsx>{`
         hr {
           width: 40%;
-          max-width: 400px;
+          max-width: 200px;
           border: none;
           border-bottom: 2px solid ${colors[color] || color};
         }

@@ -62,11 +62,11 @@ export default function PageHeading({ isHome, title }) {
           padding-top: ${isHome ? '14vh' : '6vh'};
           position: relative;
           text-align: center;
-          z-index: 3;
           background: ${util.theme().bgTitle};
           width: 100%;
           margin-top: 0;
           transition: margin-top 200ms ease-in-out;
+          z-index: 3;
         }
 
         h1 {
@@ -99,15 +99,12 @@ export default function PageHeading({ isHome, title }) {
           appearance: none;
           border: none;
           cursor: pointer;
-          // position: absolute;
           padding: 0;
           margin-top: 20px;
-          width: 40px;
-          height: 40px;
+          width: 46px;
+          height: 46px;
           background: transparent;
           z-index: 1;
-          // right: 30px;
-          // top: 30px;
 
         }
 
@@ -117,7 +114,7 @@ export default function PageHeading({ isHome, title }) {
           background: ${util.theme().text};
           position: relative;
           margin: 18px auto;
-          width: 20px;
+          width: 26px;
         }
 
         button span:before,
@@ -130,11 +127,11 @@ export default function PageHeading({ isHome, title }) {
         }
 
         button span:after {
-          bottom: -5px;
+          bottom: -6px;
         }
 
         button span:before {
-          top: -7px;
+          top: -8px;
         }
 
         .subpage-logo {
@@ -142,6 +139,10 @@ export default function PageHeading({ isHome, title }) {
         }
 
         @media screen and (min-width: 800px) {
+          header {
+            padding-top: ${isHome ? '16vh' : '8vh'};
+          }
+
           h1 {
             font-size: 42px;
           }
