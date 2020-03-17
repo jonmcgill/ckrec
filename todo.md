@@ -1,10 +1,10 @@
 ## TODO
 
-- [ ] Easter bg
-- [ ] White theme
-- [ ] Favicon
+- [x] Easter bg
+- [x] White theme
+- [x] Blue theme
+- [x] Favicon
 - [ ] Head element with relevant SEO meta tags
-- [ ] Blue theme
 - [ ] Advent bg
 - [ ] Christmas bg
 - [ ] Epiphany bg

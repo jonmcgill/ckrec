@@ -21,15 +21,11 @@ export const services = [
     "day": "Sunday",
     "services": [
       {
-        "name": "Godly Play",
+        "name": "Children's Sunday School",
         "time": "9:00am"
       },
       {
-        "name": "Children's Church School",
-        "time": "9:00am"
-      },
-      {
-        "name": "Adult Church School",
+        "name": "Adult Sunday School",
         "time": "9:00am"
       },
       {

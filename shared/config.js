@@ -1,4 +1,4 @@
 export default {
-  season: 'Lent',
+  season: 'Advent',
   contentMaxWidth: '700px',
 }

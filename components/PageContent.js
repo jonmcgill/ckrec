@@ -16,7 +16,7 @@ export default function PageContent({ bg, children, center, ...rest }) {
           padding: 60px 30px;
           position: relative;
           z-index: 3;
-          color: ${colors.black};
+          color: ${util.theme().copy || colors.black};
           text-align: ${center ? 'center' : 'left'};
         }
 

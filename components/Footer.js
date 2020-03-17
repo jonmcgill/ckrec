@@ -1,6 +1,5 @@
 import Link from 'next/link';
 import { fonts } from '../shared/styles';
-import Space from '../components/Space';
 import util from '../shared/util';
 import config from '../shared/config';
 
@@ -95,7 +94,7 @@ export default function Footer() {
 
         hr {
           width: 100px;
-          border-top: 2px solid white;
+          border-top: 2px solid ${util.theme().text};
           margin: 0px;
         }
 

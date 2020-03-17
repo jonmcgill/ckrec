@@ -6,8 +6,13 @@ export default function StLazarusMission() {
     <Page title="St. Lazarus Mission">
       <PageContent>
         <p>
-          We seek, gather, and care for Christ's scattered sheep living in nursing homes. Uniquely,
-          we approach ministry holistically. We adopt everyone in the nursing home — residents and
+          For more than twenty years, a team of dedicated lay ministers from Christ the King and
+          Christ our Hope parishes in Dayton have partnered to form St. Lazarus Mission, actively
+          providing residents of local nursing homes with ongoing pastoral care, "family" visits,
+          and regular Sunday services.
+        </p>
+        <p>
+          We approach this ministry holistically, adopting everyone in the nursing home — residents and
           families, staff and management. We love anyone and everyone, Christian and non-Christian.
           We minister both to and with people, enabling the least of these, the destitute and dying,
           and the otherwise forgotten and put away, to be the local, missional church in each nursing
