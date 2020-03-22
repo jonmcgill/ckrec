@@ -1,6 +1,6 @@
 # CKREC
 
-Website for Christ the King Anglican Church
+Website for Christ the King Anglican Church.
 
 Uses `next` and `now`
 
