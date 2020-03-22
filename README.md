@@ -1,8 +1,8 @@
 # CKREC
 
-New website to replace our current... situation.
+Website for Christ the King Anglican Church
 
-Uses `next` and `now`.
+Uses `next` and `now`
 
 ```
 yarn
