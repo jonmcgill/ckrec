@@ -35,3 +35,36 @@ export const services = [
     ]
   }
 ]
+
+export const specialServices = [
+  {
+    title: 'Palm Sunday Holy Communion',
+    time: 'Sunday, April 5th, 10:00AM',
+    link: 'https://us04web.zoom.us/j/252496176'
+  },
+  {
+    title: 'Maundy Thursday',
+    time: 'Thursday, April 9th, 8:00PM',
+    link: 'https://us04web.zoom.us/j/478212124'
+  },
+  {
+    title: 'The Seven Last Words',
+    time: 'Friday, April 10th, 12:00PM',
+    link: 'https://us04web.zoom.us/j/246628269'
+  },
+  {
+    title: 'Good Friday Tenebrae',
+    time: 'Friday, April 10th, 8:15PM',
+    link: 'https://us04web.zoom.us/j/829612214'
+  },
+  {
+    title: 'Easter Holy Vigil',
+    time: 'Saturday, April 11th, 8:30PM',
+    link: 'https://us04web.zoom.us/j/448007517'
+  },
+  {
+    title: 'Easter Morning Holy Communion',
+    time: 'Sunday, April 12th, 10:00AM',
+    link: 'https://us04web.zoom.us/j/877346336'
+  }
+]
