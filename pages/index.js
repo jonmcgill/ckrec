@@ -38,22 +38,6 @@ export default function Index() {
             margin-top: 0 !important;
           }
 
-          .special-service {
-            margin-bottom: 40px;
-          }
-
-          .special-service h3 {
-            font-family: ${fonts.serif};
-            font-size: 18px;
-            font-weight: bold;
-            margin-bottom: 6px;
-          }
-
-          .special-service p {
-            font-size: 15px;
-            margin-bottom: 6px;
-          }
-
           main div {
             margin-top: 20px;
           }
