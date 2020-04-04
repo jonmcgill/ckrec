@@ -3,17 +3,17 @@ import LineBreak from '../components/LineBreak';
 import Space from '../components/Space';
 import Page from '../components/Page';
 import SpecialService from '../components/SpecialSevice';
+import ServiceTimes from '../components/ServiceTimes';
 import util from '../shared/util';
-import { fonts, colors } from '../shared/styles';
 import { services, specialServices } from '../content/services';
+
+const addServices = false;
+const addSpecial = true;
 
 export default function Index() {
   return (
     <Page isHome>
       <PageContent bg="rgba(255,255,255,0.95)" center id="services">
-        <h2>Holy Week and Easter</h2>
-        <LineBreak color={util.theme().accent} />
-        <Space y="30px" />
         <main>
           {/* <p>
             <em>
@@ -26,12 +26,26 @@ export default function Index() {
               Read Bishop Sutton's Letter Here
             </a>
           </div> */}
-          {specialServices.map(data =>
-            <SpecialService key={data.time} {...data} />
+          {addSpecial && (
+            <>
+              <h2>Holy Week and Easter</h2>
+              <LineBreak color={util.theme().accent} />
+              <Space y="30px" />
+              {specialServices.map(data =>
+                <SpecialService key={data.time} {...data} />
+              )}
+            </>
           )}
-          {/* {services.map(serv =>
-            <Service key={serv.day} {...serv} />
-          )} */}
+          {addServices && (
+            <>
+              <h2>Weekly Services</h2>
+              <LineBreak color={util.theme().accent} />
+              <Space y="30px" />
+              {services.map(serv =>
+                <ServiceTimes active key={serv.day} {...serv} />
+              )}
+            </>
+          )}
         </main>
         <style jsx>{`
           h2 {
@@ -44,56 +58,5 @@ export default function Index() {
         `}</style>
       </PageContent>
     </Page>
-  )
-}
-
-
-function Service({ day, services }) {
-  return (
-    <div>
-      <h3>{day}</h3>
-      <ul>
-        {services.map(serv =>
-          <li key={serv.name}>
-            <span>{serv.name}</span>
-            <span>{serv.time}</span>
-          </li>
-        )}
-      </ul>
-      <style jsx>{`
-        div {
-          text-align: left;
-          font-family: ${fonts.sans};
-          color: ${colors.black};
-          margin: 0 auto;
-          max-width: 400px;
-        }
-
-        h3 {
-          font-size: 16px;
-          font-weight: bold;
-        }
-
-        ul {
-          margin: 7px 0px 40px;
-        }
-
-        li {
-          display: flex;
-          margin: 0 !important;
-          justify-content: space-between;
-        }
-
-        @media screen and (min-width: 800px) {
-          div {
-            max-width: 600px;
-          }
-
-          h3 {
-            font-size: 20px;
-          }
-        }
-      `}</style>
-    </div>
   )
 }
