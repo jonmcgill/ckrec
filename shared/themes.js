@@ -22,7 +22,7 @@ export const themes = {
   },
   white: {
     bgNav: 'rgba(255,255,255,0.97)',
-    bgTitle: 'rgba(255,255,255,0.75)',
+    bgTitle: 'rgba(255,255,255, 0.75)',
     bgFooter: 'rgba(240,240,245,0.97)',
     text: '#22334a',
     copy: '#22334a',
