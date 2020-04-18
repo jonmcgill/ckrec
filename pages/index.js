@@ -28,7 +28,7 @@ export default function Index() {
           </div> */}
           {addSpecial && (
             <>
-              <h2>Holy Week and Easter</h2>
+              <h2>Upcoming Services</h2>
               <LineBreak color={util.theme().accent} />
               <Space y="30px" />
               {specialServices.map(data =>

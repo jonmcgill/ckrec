@@ -38,9 +38,22 @@ export const services = [
 
 export const specialServices = [
   {
+    title: 'Holy Communion, Second Sunday in Easter',
+    time: 'Sunday, April 19th, 10:00 AM',
+    link: 'https://us02web.zoom.us/j/85449412267'
+  },
+  {
+    title: 'Holy Communion, Third Sunday in Easter',
+    time: 'Sunday, April 26th, 10:00 AM',
+    link: 'https://us02web.zoom.us/j/82688314223'
+  },
+]
+
+const holyWeek = [
+  {
     title: 'Palm Sunday Holy Communion',
     time: 'Sunday, April 5th, 10:00AM',
-    link: 'https://us04web.zoom.us/j/252496176'
+    link: 'https://us02web.zoom.us/j/85449412267'
   },
   {
     title: 'Maundy Thursday',
