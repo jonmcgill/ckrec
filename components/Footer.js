@@ -36,7 +36,7 @@ export default function Footer() {
                 <li>
                   Email:
                   {' '}
-                  <a href="info@ckrec.org">info@ckrec.org</a>
+                  <a href="mailto:info@ckrec.org">info@ckrec.org</a>
                 </li>
               </ul>
             </div>

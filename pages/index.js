@@ -8,24 +8,45 @@ import util from '../shared/util';
 import { services, specialServices } from '../content/services';
 
 const addServices = false;
-const addSpecial = true;
+const addSpecial = false;
 
 export default function Index() {
   return (
     <Page isHome>
       <PageContent bg="rgba(255,255,255,0.95)" center id="services">
         <main>
-          {/* <p>
-            <em>
-              In obedience to our bishop and in compliance with <a href="https://coronavirus.ohio.gov/wps/wcm/connect/gov/81a5ce67-eeb6-4c29-861f-f2996160f028/Director%27s+Order+--+Stay+At+Home+03.22.20R.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE.Z18_M1HGGIK0N0JO00QO9DDDDM3000-81a5ce67-eeb6-4c29-861f-f2996160f028-n43OTq8" target="_blank">Ohio's Public Health Stay at Home Order</a>, we will be cancelling all regular services until futher directed.
-              Please check back regularly for updates on when we will resume. If you have any questions, please email us.
-            </em>
+          <h2>In-Person Services</h2>
+          <p>
+            We are currently meeting once a week for Holy Communion on Sunday mornings at 10:00AM. If you plan to attend,
+            please <a href="https://reopen.church/r/YgDImHPr" target="_blank">sign you and your family up</a> so we are
+            able to prepare the elements acordingly. As an act of love towards your neighbor we ask that you please
+            observe the following guidelines while attending our in-person gatherings:
           </p>
-          <div>
-            <a href="http://www.recus.org/covid19-response.html" target="_blank">
-              Read Bishop Sutton's Letter Here
-            </a>
-          </div> */}
+          <ol>
+            <li>
+              Please wear a mask during the service (exceptions for small children or if  you have a medical condition)
+            </li>
+            <li>
+              Sit together with your family leaving one pew between you and the next person
+            </li>
+            <li>
+              Please observe strict social distancing (six feet) including while entering, exiting, and any fellowship in
+              the building afterwards. Everyone is encouraged to fellowship outside after the services
+            </li>
+            <li>
+              If you, or a member of your household is sick, please refrain from coming to the service that week
+            </li>
+          </ol>
+          <h2>Virtual Services</h2>
+          <p>
+            If you are unable to join us at the sanctuary, you can participate in
+            a live stream of the service over <a href="https://zoom.us/download" target="_blank">Zoom</a>.
+          </p>
+          <ol>
+            <li>Make sure you have the Zoom client installed on your device</li>
+            <li>Request a meeting password from <a href="mailto:info@ckrec.org">info@ckrec.org</a></li>
+            <li>On Sunday morning, <a href="https://us02web.zoom.us/j/83954661868" target="_blank">join the virtual service</a></li>
+          </ol>
           {addSpecial && (
             <>
               <h2>Upcoming Services</h2>
@@ -54,6 +75,19 @@ export default function Index() {
 
           main div {
             margin-top: 20px;
+          }
+
+          main p,
+          main ol {
+            text-align: left;
+          }
+
+          ol {
+            padding-left: 20px;
+          }
+
+          ol li {
+            list-style-type: decimal;
           }
         `}</style>
       </PageContent>
