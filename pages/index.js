@@ -19,7 +19,7 @@ export default function Index() {
           <p>
             We are currently meeting once a week for Holy Communion on Sunday mornings at 10:00AM. If you plan to attend,
             please <a href="https://reopen.church/r/YgDImHPr" target="_blank">sign you and your family up</a> so we are
-            able to prepare the elements acordingly. As an act of love towards your neighbor we ask that you please
+            able to prepare the elements accordingly. As an act of love towards your neighbor we ask that you please
             observe the following guidelines while attending our in-person gatherings:
           </p>
           <ol>
@@ -34,7 +34,7 @@ export default function Index() {
               the building afterwards. Everyone is encouraged to fellowship outside after the services
             </li>
             <li>
-              If you, or a member of your household is sick, please refrain from coming to the service that week
+              If you or a member of your household is sick, please refrain from coming to the service that week
             </li>
           </ol>
           <h2>Virtual Services</h2>
