@@ -18,7 +18,7 @@ export default function Index() {
           <h2>In-Person Services</h2>
           <p>
             We are currently meeting once a week for Holy Communion on Sunday mornings at 10:00AM. If you plan to attend,
-            please <a href="https://reopen.church/r/YgDImHPr" target="_blank">sign you and your family up</a> so we are
+            please <a href="https://reopen.church/r/kjGDK14e" target="_blank">sign you and your family up</a> so we are
             able to prepare the elements accordingly. As an act of love towards your neighbor we ask that you please
             observe the following guidelines while attending our in-person gatherings:
           </p>
@@ -44,7 +44,7 @@ export default function Index() {
           </p>
           <ol>
             <li>Make sure you have the Zoom client installed on your device</li>
-            <li>Request a meeting password from <a href="mailto:info@ckrec.org">info@ckrec.org</a></li>
+            <li>Request a meeting password from <a href="mailto:info@ctkdayton.org">info@ctkdayton.org</a></li>
             <li>On Sunday morning, <a href="https://us02web.zoom.us/j/83954661868" target="_blank">join the virtual service</a></li>
           </ol>
           {addSpecial && (
