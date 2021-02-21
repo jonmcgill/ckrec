@@ -9,6 +9,7 @@ import { services, specialServices } from '../content/services';
 
 const addServices = false;
 const addSpecial = false;
+const signupLink = 'https://ckrec.us10.list-manage.com/track/click?u=3ac737087baab366987bd82d2&id=163cc3391f&e=a177249b3e'
 
 export default function Index() {
   return (
@@ -17,10 +18,12 @@ export default function Index() {
         <main>
           <h2>In-Person Services</h2>
           <p>
-            We are currently meeting once a week for Holy Communion on Sunday mornings at 10:00AM. If you plan to attend,
-            please <a href="https://reopen.church/r/kjGDK14e" target="_blank">sign you and your family up</a> so we are
-            able to prepare the elements accordingly. As an act of love towards your neighbor we ask that you please
-            observe the following guidelines while attending our in-person gatherings:
+            We currently offer two Holy Communion services on Sunday mornings. The 9:00 AM service is a said service (no singing)
+            and the 10:00 AM service has limited singing. Both services have limited seating. If you plan to attend,
+            please <a href={signupLink} target="_blank">sign up</a> before Sunday morning so we are able to prepare the elements accordingly.
+          </p>
+          <p>
+            As an act of love towards your neighbor we ask that you please observe the following guidelines while attending our in-person gatherings:
           </p>
           <ol>
             <li>

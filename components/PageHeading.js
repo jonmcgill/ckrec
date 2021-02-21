@@ -47,7 +47,7 @@ export default function PageHeading({ isHome, title }) {
         {isHome && (
           <>
             <p>{home.mission}</p>
-            <aside>{util.season()}, {util.year()}</aside>
+            {/* <aside>{util.season()}, {util.year()}</aside> */}
           </>
         )}
         <button onClick={toggleNav}>
