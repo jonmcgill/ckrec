@@ -28,7 +28,7 @@ export default function Footer() {
                 <li>
                   Phone:
                   {' '}
-                  <a href="tel:937-224-8555">937-224-8555</a>
+                  <a href="tel:937-224-8556">937-224-8556</a>
                 </li>
                 <li>
                   Fax: 937-224-4485
@@ -36,7 +36,7 @@ export default function Footer() {
                 <li>
                   Email:
                   {' '}
-                  <a href="mailto:info@ckrec.org">info@ckrec.org</a>
+                  <a href="mailto:info@ctkdayton.org">info@ctkdayton.org</a>
                 </li>
               </ul>
             </div>
