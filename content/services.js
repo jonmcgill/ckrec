@@ -49,35 +49,57 @@ export const specialServices = [
   },
 ]
 
-const holyWeek = [
+const zoomLink = 'https://ckrec.us10.list-manage.com/track/click?u=3ac737087baab366987bd82d2&id=2c9446273a&e=a177249b3e'
+
+export const holyWeek = [
   {
     title: 'Palm Sunday Holy Communion',
-    time: 'Sunday, April 5th, 10:00AM',
-    link: 'https://us02web.zoom.us/j/85449412267'
+    time: 'Sunday, March 28th, 10:00AM',
+    link: ''
   },
   {
-    title: 'Maundy Thursday',
-    time: 'Thursday, April 9th, 8:00PM',
-    link: 'https://us04web.zoom.us/j/478212124'
+    title: 'Afternoon Holy Communion',
+    time: 'Monday, March 29th, 12:15PM',
+    link: ''
+  },
+  {
+    title: 'Afternoon Holy Communion',
+    time: 'Tuesday, March 30th, 12:15PM',
+    link: ''
+  },
+  {
+    title: 'Afternoon Holy Communion',
+    time: 'Wednesday, March 30th, 12:15PM',
+    link: ''
+  },
+  {
+    title: 'Maundy Thursday Holy Communion',
+    time: 'Thursday, April 1st, 7:00PM',
+    link: zoomLink
+  },
+  {
+    title: 'Stations of the Cross',
+    time: 'Friday, April 2nd, 11:00AM',
+    link: zoomLink
   },
   {
     title: 'The Seven Last Words',
-    time: 'Friday, April 10th, 12:00PM',
-    link: 'https://us04web.zoom.us/j/246628269'
+    time: 'Friday, April 2nd, 12:00PM',
+    link: zoomLink
   },
   {
     title: 'Good Friday Tenebrae',
-    time: 'Friday, April 10th, 8:15PM',
-    link: 'https://us04web.zoom.us/j/829612214'
+    time: 'Friday, April 2nd, 8:30PM',
+    link: zoomLink
   },
   {
     title: 'Easter Holy Vigil',
-    time: 'Saturday, April 11th, 8:30PM',
-    link: 'https://us04web.zoom.us/j/448007517'
+    time: 'Saturday, April 3rd, 8:30PM',
+    link: zoomLink
   },
   {
     title: 'Easter Morning Holy Communion',
-    time: 'Sunday, April 12th, 10:00AM',
-    link: 'https://us04web.zoom.us/j/877346336'
+    time: 'Sunday, April 4th, 10:00AM',
+    link: zoomLink
   }
 ]
