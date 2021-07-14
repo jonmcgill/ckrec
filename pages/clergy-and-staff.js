@@ -28,8 +28,8 @@ export default function ClergyAndStaff() {
         </p>
         <h2>Parish Staff</h2>
         <ul>
-          <li>Jenny Downey, Parish Administrator</li>
-          <li>Amanda McGill, Music Director</li>
+          <li>Layne Hilyer, Parish Administrator</li>
+          {/* <li>Amanda McGill, Music Director</li> */}
         </ul>
         <h2>Parish Council</h2>
         <ul>

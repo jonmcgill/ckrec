@@ -7,9 +7,9 @@ import ServiceTimes from '../components/ServiceTimes';
 import util from '../shared/util';
 import { services, specialServices, holyWeek } from '../content/services';
 
-const addServices = false;
+const addServices = true;
 const addSpecial = false;
-const isHolyWeek = true;
+const isHolyWeek = false;
 const signupLink = 'https://ckrec.us10.list-manage.com/track/click?u=3ac737087baab366987bd82d2&id=163cc3391f&e=a177249b3e'
 
 export default function Index() {
@@ -27,14 +27,17 @@ export default function Index() {
             )}
           </>
           )}
-          {/* <h2>In-Person Services</h2>
-          <p>
-            We currently offer two Holy Communion services on Sunday mornings. The 9:00 AM service is a said service (no singing)
-            and the 10:00 AM service has limited singing. Both services have limited seating. If you plan to attend,
-            please <a href={signupLink} target="_blank">sign up</a> before Sunday morning so we are able to prepare the elements accordingly.
-          </p> */}
-
-          <p>
+          {addServices && (
+            <>
+              <h2>Weekly Services</h2>
+              <LineBreak color={util.theme().accent} />
+              <Space y="30px" />
+              {services.map(serv =>
+                <ServiceTimes active key={serv.day} {...serv} />
+              )}
+            </>
+          )}
+          {/* <p>
             As an act of love towards your neighbor we ask that you please observe the following guidelines while attending our in-person gatherings:
           </p>
           <ol>
@@ -51,7 +54,7 @@ export default function Index() {
             <li>
               If you or a member of your household is sick, please refrain from coming to the service that week
             </li>
-          </ol>
+          </ol> */}
           <h2>Virtual Services</h2>
           <p>
             If you are unable to join us at the sanctuary, you can participate in
@@ -72,16 +75,7 @@ export default function Index() {
               )}
             </>
           )}
-          {addServices && (
-            <>
-              <h2>Weekly Services</h2>
-              <LineBreak color={util.theme().accent} />
-              <Space y="30px" />
-              {services.map(serv =>
-                <ServiceTimes active key={serv.day} {...serv} />
-              )}
-            </>
-          )}
+          
         </main>
         <style jsx>{`
           h2 {
