@@ -8,9 +8,9 @@ export default function ServiceTimes({ active, day, services }) {
       <h3>{day}</h3>
       <ul>
         {services.map(serv =>
-          <li key={serv.name}>
-            <span>{serv.name}</span>
-            <span>{serv.time}</span>
+          <li key={serv[0]}>
+            <span>{serv[0]}</span>
+            <span>{serv[1]}</span>
           </li>
         )}
       </ul>

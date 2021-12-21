@@ -1,3 +1,4 @@
+import { content } from '../content/content'
 import util from '../shared/util';
 
 export default function PageBackground() {
@@ -19,13 +20,13 @@ export default function PageBackground() {
 
         @media screen and (max-width: 500px) {
           .bg {
-            background-image: url("${util.background().sm}");
+            background-image: url("${content.BackgroundImg.mobile}");
           }
         }
 
         @media screen and (min-width: 501px) {
           .bg {
-            background-image: url("${util.background().lg}");
+            background-image: url("${content.BackgroundImg.desktop}");
           }
         }
       `}</style>

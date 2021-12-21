@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { fonts } from '../shared/styles';
 import util from '../shared/util';
 import config from '../shared/config';
+import { content } from '../content/content'
 
 export default function Footer() {
   return (
@@ -28,15 +29,19 @@ export default function Footer() {
                 <li>
                   Phone:
                   {' '}
-                  <a href="tel:937-224-8556">937-224-8556</a>
+                  <a href={`tel:${content.Contact.phone}`}>
+                    {content.Contact.phone}
+                  </a>
                 </li>
                 <li>
-                  Fax: 937-224-4485
+                  Fax: {content.Contact.fax}
                 </li>
                 <li>
                   Email:
                   {' '}
-                  <a href="mailto:info@ctkdayton.org">info@ctkdayton.org</a>
+                  <a href={`mailto:${content.Contact.email}`}>
+                    {content.Contact.email}
+                  </a>
                 </li>
               </ul>
             </div>

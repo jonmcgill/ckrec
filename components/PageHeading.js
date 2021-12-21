@@ -4,7 +4,7 @@ import Logo from './Logo';
 import LineBreak from './LineBreak';
 import Navigation from './Navigation';
 import { fonts } from '../shared/styles';
-import { home } from '../content/home';
+import { content } from '../content/content'
 import util from '../shared/util';
 
 export default function PageHeading({ isHome, title }) {
@@ -36,20 +36,15 @@ export default function PageHeading({ isHome, title }) {
         )}
         {isHome && (
           <h1>
-            <span>Christ the King</span>
-            <span>Anglican Church</span>
+            <span>{content.Home.titleTop}</span>
+            <span>{content.Home.titleBottom}</span>
           </h1>
         )}
         {!isHome && (
           <h1>{title}</h1>
         )}
         <LineBreak color={util.theme().accent} />
-        {isHome && (
-          <>
-            <p>{home.mission}</p>
-            {/* <aside>{util.season()}, {util.year()}</aside> */}
-          </>
-        )}
+        {isHome && <p>{content.Home.mission}</p>}
         <button onClick={toggleNav}>
           <span />
         </button>

@@ -42,7 +42,7 @@ export default function PageContent({ bg, children, center, ...rest }) {
           margin-bottom: 30px;
         }
 
-        .page-content li {
+        .page-content ul li {
           list-style: disc;
           margin-left: 22px;
         }

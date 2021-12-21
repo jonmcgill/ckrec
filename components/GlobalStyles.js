@@ -29,6 +29,14 @@ export default function GlobalStyles() {
       a:hover {
         text-decoration: underline;
       }
+
+      ol {
+        margin-left: 20px;
+      }
+
+      ol > li {
+        list-style-type: decimal;
+      }
     `}</style>
   )
 }
