@@ -35,7 +35,7 @@ export default function PageHeading({ isHome, title }) {
           </div>
         )}
         {isHome && (
-          <h1>
+          <h1 className="text-shad-2">
             <span>{content.Home.titleTop}</span>
             <span>{content.Home.titleBottom}</span>
           </h1>
@@ -44,7 +44,7 @@ export default function PageHeading({ isHome, title }) {
           <h1>{title}</h1>
         )}
         <LineBreak color={util.theme().accent} />
-        {isHome && <p>{content.Home.mission}</p>}
+        {isHome && <p className="text-shad-1">{content.Home.mission}</p>}
         <button onClick={toggleNav}>
           <span />
         </button>
