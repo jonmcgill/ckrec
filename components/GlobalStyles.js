@@ -37,6 +37,13 @@ export default function GlobalStyles() {
       ol > li {
         list-style-type: decimal;
       }
+
+      .text-shad-1 {
+        text-shadow: 1px 1px black;
+      }
+      .text-shad-2 {
+        text-shadow: 2px 2px black;
+      }
     `}</style>
   )
 }
