@@ -12,7 +12,7 @@ export default function PageContent({ bg, children, center, ...rest }) {
       </section>
       <style jsx global>{`
         .page-content {
-          background: ${bg || 'rgba(255,255,255,0.95)'};
+          background: ${bg || '#FFF8CA'};
           padding: 60px 30px;
           position: relative;
           z-index: 3;

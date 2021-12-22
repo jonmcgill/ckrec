@@ -11,7 +11,7 @@ import { content } from '../content/content'
 export default function Index() {
   return (
     <Page isHome>
-      <PageContent bg="rgba(255,255,255,0.95)" center id="services">
+      <PageContent center id="services">
         <main>
           {content.SpecialServices.filter((s) => s.show).map((s) => (
             <div key={s.title}>
