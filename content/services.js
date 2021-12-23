@@ -39,7 +39,7 @@ export const VirtualServices = `
   of the service over [Zoom](https://zoom.us/download).
 
   1. Make sure you have the Zoom client installed on your device
-  2. Request a meeting password from [info@ctkdayton.org](mailto:info@ctkdayton.org)
+  2. Request a meeting password from [parishadmin@ctkdayton.org](mailto:parishadmin@ctkdayton.org)
   3. On Sunday morning, [join the virtual service](https://us02web.zoom.us/j/83954661868)
 `
 
