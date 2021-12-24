@@ -1,3 +1,5 @@
+import util from '../shared/util'
+
 export const SundayWeekly = {
   day: 'Sunday',
   events: [
@@ -14,7 +16,7 @@ export const WednesdayWeekly = {
 }
 
 export const ChristmasServices = {
-  show: true,
+  show: util.isBetween('12/18/2021', '12/26/2021'),
   title: 'Christmas Services',
   items: [
     {

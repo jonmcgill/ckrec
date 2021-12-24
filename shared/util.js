@@ -19,6 +19,13 @@ export default {
   year() {
     return year
   },
+  isPast(date) {
+    return !Boolean(Date.now() > new Date(date).getTime())
+  },
+  isBetween(date1, date2) {
+    const n = Date.now()
+    return n > new Date(date1).getTime() && n < new Date(date2).getTime()
+  }
 }
 
 // https://gist.github.com/johndyer/0dffbdd98c2046f41180c051f378f343
