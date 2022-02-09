@@ -20,7 +20,7 @@ Children's Hunger Relief Fund, St. Lazarus Mission, and the Huffman Historic Nei
 In 1998, Fr. Wayne co-founded Dominion Academy of Dayton where he serves as Priest-in-Charge. His
 scholarly interests lie in liturgics, Anglican studies, and the Christian ascetical tradition, and
 in 2015, he was accepted as an oblate by the Order of Saint Benedict. Fr. Wayne has four children
-and four grandchildren and lives with his wife, Sandy.
+and seven grandchildren and lives with his wife, Sandy.
 
 ## Parish Staff
 
@@ -29,18 +29,17 @@ and four grandchildren and lives with his wife, Sandy.
 ## Parish Council
 
 - Fr. Wayne McNamara, Rector
-- Jeremy Downey, Junior Warden
 - Mike McDermott, Senior Warden
+- Jenny Downey, Junior Warden
 
 ## Parish Vestry
 
-- Jeremy Downey, Junior Warden
 - Mike McDermott, Senior Warden
+- Jenny Downey, Junior Warden
 - Dan Hack, Treasurer
-- Rick Teachey, Sexton
-- Joshua Abernathy, Secretary
-- Deepika McNamara
-- Tim Dana
-- James Hoffman
+- Jeff Brown, Sexton
+- Tim Dana, Secretary
 - Lauren Hilyer
+- Amanda McGill
+- Bob Conger
 `
