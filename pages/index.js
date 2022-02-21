@@ -18,11 +18,12 @@ export default function Index() {
               <h2>{s.title}</h2>
               <LineBreak color={util.theme().accent} />
               <Space y="20px" />
-              {s.items.map((serv) => (
+              {s.items.filter((serv) => serv.show).map((serv) => (
                 <ServiceTimes
                   active
                   key={serv.day}
                   day={serv.day}
+                  date={serv.date}
                   services={serv.events}
                 />
               ))}
@@ -37,6 +38,7 @@ export default function Index() {
               active
               key={serv.day}
               day={serv.day}
+              date={serv.date}
               services={serv.events}
             />
           ))}
