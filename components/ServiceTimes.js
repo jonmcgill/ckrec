@@ -1,11 +1,14 @@
 import { colors, fonts } from '../shared/styles';
 
-export default function ServiceTimes({ active, day, services }) {
+export default function ServiceTimes({ active, day, date, services }) {
   if (!active) return false;
 
   return (
     <div>
-      <h3>{day}</h3>
+      <section>
+        <h3>{day}</h3>
+        {date && <strong>{date}</strong>}
+      </section>
       <ul>
         {services.map(serv =>
           <li key={serv[0]}>
@@ -32,6 +35,7 @@ export default function ServiceTimes({ active, day, services }) {
           margin: 7px 0px 40px;
         }
 
+        section,
         li {
           display: flex;
           margin: 0 !important;

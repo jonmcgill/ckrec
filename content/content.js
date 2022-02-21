@@ -24,6 +24,7 @@ export const content = {
     Services.WednesdayWeekly,
   ],
   SpecialServices: [
-    Services.ChristmasServices
+    Services.ChristmasServices,
+    Services.LentenServices,
   ]
 }

@@ -15,17 +15,35 @@ export const WednesdayWeekly = {
   ]
 }
 
+export const LentenServices = {
+  show: util.isBetween('2/20/2022', '3/3/2022'),
+  title: 'Lenten Services',
+  items: [
+    {
+      show: true,
+      day: 'Wednesday',
+      date: 'March 2, 2022',
+      events: [
+        ['Ash Wednesday (Morning Service)', '7:00 AM'],
+        ['Ash Wednesday (Evening Service)', '7:00 PM'],
+      ]
+    }
+  ]
+}
+
 export const ChristmasServices = {
   show: util.isBetween('12/18/2021', '12/26/2021'),
   title: 'Christmas Services',
   items: [
     {
+      show: true,
       day: 'Friday',
       events: [
         ['Christmas Eve Lessons & Carols', '6:30 PM']
       ]
     },
     {
+      show: true,
       day: 'Saturday',
       events: [
         ['Christmas Day Holy Communion', '9:00 AM']
