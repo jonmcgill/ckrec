@@ -21,6 +21,14 @@ export const LentenServices = {
   items: [
     {
       show: true,
+      day: 'Tuesday',
+      date: 'March 1, 2022',
+      events: [
+        ['Shrove Tuesday Pancake Dinner', '5:30 PM']
+      ]
+    },
+    {
+      show: true,
       day: 'Wednesday',
       date: 'March 2, 2022',
       events: [
