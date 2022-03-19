@@ -26,5 +26,6 @@ export const content = {
   SpecialServices: [
     Services.ChristmasServices,
     Services.LentenServices,
+    Services.HolyWeekServices,
   ]
 }

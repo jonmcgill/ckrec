@@ -39,6 +39,57 @@ export const LentenServices = {
   ]
 }
 
+export const HolyWeekServices = {
+  show: util.isBetween('3/17/2022', '4/18/2022'),
+  title: 'Holy Week Services',
+  items: [
+    {
+      show: true,
+      day: 'Monday, Tuesday, Wednesday',
+      date: 'April 11-13, 2022',
+      events: [
+        ['Holy Week Service', '12:15PM']
+      ]
+    },
+    {
+      show: true,
+      day: 'Thursday',
+      date: 'April 14, 2022',
+      events: [
+        ['Supper of the Lamb', '6:00PM'],
+        ['Maundy Thursday Service', '7:00PM'],
+      ]
+    },
+    {
+      show: true,
+      day: 'Friday',
+      date: 'April 15, 2022',
+      events: [
+        ['Stations of the Cross', '11:00AM'],
+        ['Seven Last Words', '12:00PM'],
+        ['Showing of "The Passion of the Christ"', '3:00PM'],
+        ['Tenebrae', '8:00PM'],
+      ]
+    },
+    {
+      show: true,
+      day: 'Saturday',
+      date: 'April 16, 2022',
+      events: [
+        ['Easter Vigil and Celebration', '8:30PM'],
+      ]
+    },
+    {
+      show: true,
+      day: 'Sunday',
+      date: 'April 17, 2022',
+      events: [
+        ['Easter Sunday Holy Communion', '10:00AM'],
+      ]
+    },
+  ]
+}
+
 export const ChristmasServices = {
   show: util.isBetween('12/18/2021', '12/26/2021'),
   title: 'Christmas Services',
