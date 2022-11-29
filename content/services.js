@@ -1,5 +1,7 @@
 import util from '../shared/util'
 
+// bump
+
 export const SundayWeekly = {
   day: 'Sunday',
   events: [
