@@ -1,5 +1,7 @@
 import util from '../shared/util'
 
+// bump
+
 export const SundayWeekly = {
   day: 'Sunday',
   events: [
@@ -85,6 +87,46 @@ export const HolyWeekServices = {
       date: 'April 17, 2022',
       events: [
         ['Easter Sunday Holy Communion', '10:00AM'],
+      ]
+    },
+  ]
+}
+
+export const AdventEvents = {
+  show: util.isBetween('11/28/2022', '12/26/2022'),
+  title: 'Advent Events and Services',
+  items: [
+    {
+      show: true,
+      day: 'Sunday',
+      date: 'December 11, 2022',
+      events: [
+        ['Greening of the Church & Chili Cook-Off', '4:00 PM']
+      ]
+    },
+    {
+      show: true,
+      day: 'Wednesday',
+      date: 'December 14, 2022',
+      events: [
+        ['Neighborhood Caroling (Potluck)', '6:00 PM'],
+        ['Neighborhood Caroling (Singing)', '7:00 PM']
+      ]
+    },
+    {
+      show: true,
+      day: 'Saturday',
+      date: 'December 24, 2022',
+      events: [
+        ['Christmas Eve Lessons & Carols', '6:30 PM']
+      ]
+    },
+    {
+      show: true,
+      day: 'Sunday',
+      date: 'December 25, 2022',
+      events: [
+        ['Christmas Morning Service', '10:00 AM']
       ]
     },
   ]

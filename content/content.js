@@ -24,6 +24,7 @@ export const content = {
     Services.WednesdayWeekly,
   ],
   SpecialServices: [
+    Services.AdventEvents,
     Services.ChristmasServices,
     Services.LentenServices,
     Services.HolyWeekServices,
