@@ -5,7 +5,7 @@ import Page from '../components/Page';
 import ServiceTimes from '../components/ServiceTimes';
 import Md from '../components/Md'
 import util from '../shared/util';
-import { VirtualServices,  } from '../content/services';
+import { VirtualServices } from '../content/services';
 import { content } from '../content/content'
 
 export default function Index() {
