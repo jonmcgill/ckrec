@@ -104,15 +104,15 @@ export const AdventEvents = {
         ['Greening of the Church & Chili Cook-Off', '4:00 PM']
       ]
     },
-    {
-      show: true,
-      day: 'Wednesday',
-      date: 'December 14, 2022',
-      events: [
-        ['Neighborhood Caroling (Potluck)', '6:00 PM'],
-        ['Neighborhood Caroling (Singing)', '7:00 PM']
-      ]
-    },
+    // {
+    //   show: true,
+    //   day: 'Wednesday',
+    //   date: 'December 14, 2022',
+    //   events: [
+    //     ['Neighborhood Caroling (Potluck)', '6:00 PM'],
+    //     ['Neighborhood Caroling (Singing)', '7:00 PM']
+    //   ]
+    // },
     {
       show: true,
       day: 'Saturday',
