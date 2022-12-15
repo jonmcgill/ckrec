@@ -126,7 +126,7 @@ export const AdventEvents = {
       day: 'Sunday',
       date: 'December 25, 2022',
       events: [
-        ['Christmas Morning Service', '10:00 AM']
+        ['Christmas Morning Service', '9:00 AM']
       ]
     },
   ]
