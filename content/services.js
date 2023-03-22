@@ -42,21 +42,21 @@ export const LentenServices = {
 }
 
 export const HolyWeekServices = {
-  show: util.isBetween('3/17/2022', '4/18/2022'),
+  show: util.isBetween('3/17/2023', '4/10/2023'),
   title: 'Holy Week Services',
   items: [
     {
       show: true,
       day: 'Monday, Tuesday, Wednesday',
-      date: 'April 11-13, 2022',
+      date: 'April 3-5, 2023',
       events: [
-        ['Holy Week Service', '12:15PM']
+        ['Holy Week Service', '12:00PM']
       ]
     },
     {
       show: true,
       day: 'Thursday',
-      date: 'April 14, 2022',
+      date: 'April 6, 2023',
       events: [
         ['Supper of the Lamb', '6:00PM'],
         ['Maundy Thursday Service', '7:00PM'],
@@ -65,7 +65,7 @@ export const HolyWeekServices = {
     {
       show: true,
       day: 'Friday',
-      date: 'April 15, 2022',
+      date: 'April 7, 2023',
       events: [
         ['Stations of the Cross', '11:00AM'],
         ['Seven Last Words', '12:00PM'],
@@ -76,15 +76,15 @@ export const HolyWeekServices = {
     {
       show: true,
       day: 'Saturday',
-      date: 'April 16, 2022',
+      date: 'April 8, 2023',
       events: [
-        ['Easter Vigil and Celebration', '8:30PM'],
+        ['Easter Vigil and Celebration', '8:15PM'],
       ]
     },
     {
       show: true,
       day: 'Sunday',
-      date: 'April 17, 2022',
+      date: 'April 9, 2023',
       events: [
         ['Easter Sunday Holy Communion', '10:00AM'],
       ]
