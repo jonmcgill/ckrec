@@ -22,7 +22,7 @@ export default function PageHeading({ isHome, title }) {
 
   return (
     <>
-      <Navigation open={open} toggleOpen={toggleNav} />
+      {/* <Navigation open={open} toggleOpen={toggleNav} /> */}
       <header className={open ? 'isOpen' : null}>
         {isHome && <Logo color={util.theme().accent} />}
         {!isHome && (
