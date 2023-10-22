@@ -33,7 +33,7 @@ export default function Md({ children }) {
           margin-bottom: 12px;
         }
   
-        img {
+        .md-content img {
           float: left;
           margin-right: 18px;
           border-radius: 2px;

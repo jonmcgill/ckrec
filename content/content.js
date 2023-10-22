@@ -12,7 +12,8 @@ export const content = {
       Preserving, teaching, and living the historic Christian faith
       in communion with other branches of Christ's Church to advance
       His Kingdom in all the earth.
-    `
+    `,
+    contentImage: '/img/ctk-table.jpg'
   },
   Contact: {
     phone: '937-224-8556',
