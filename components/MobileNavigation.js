@@ -3,7 +3,7 @@ import { fonts } from '../shared/styles';
 import util from '../shared/util';
 import config from '../shared/config';
 
-export default function Navigation({ open, toggleOpen }) {
+export default function MobileNavigation({ open, toggleOpen }) {
   const router = useRouter();
 
   function navigate(href) {

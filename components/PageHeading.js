@@ -2,7 +2,6 @@ import { useState } from 'react';
 import Link from 'next/link';
 import Logo from './Logo';
 import LineBreak from './LineBreak';
-import Navigation from './Navigation';
 import { fonts } from '../shared/styles';
 import { content } from '../content/content'
 import util from '../shared/util';
@@ -10,19 +9,8 @@ import util from '../shared/util';
 export default function PageHeading({ isHome, title }) {
   const [open, setOpen] = useState(false);
 
-  function toggleNav() {
-    if (open) {
-      document.body.classList.remove('isNavOpen');
-      setOpen(false);
-    } else {
-      document.body.classList.add('isNavOpen');
-      setOpen(true);
-    }
-  }
-
   return (
     <>
-      {/* <Navigation open={open} toggleOpen={toggleNav} /> */}
       <header className={open ? 'isOpen' : null}>
         {isHome && (<Logo size="60px" sizeLg="60px" color={util.theme().accent} />)}
         {!isHome && (

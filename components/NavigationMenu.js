@@ -1,11 +1,26 @@
 import Link from 'next/link';
+import { useState } from 'react';
 import util from '../shared/util';
 import { fonts } from '../shared/styles';
 import HamburgerButton from './HamburgerButton';
+import MobileNavigation from './MobileNavigation';
 
 export default function NavigationMenu() {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  function toggleMobileMenu() {
+    if (mobileMenuOpen) {
+      document.body.classList.remove('isNavOpen');
+      setMobileMenuOpen(false);
+    } else {
+      document.body.classList.add('isNavOpen');
+      setMobileMenuOpen(true);
+    }
+  }
+
   return (
     <>
+      <MobileNavigation open={mobileMenuOpen} toggleOpen={toggleMobileMenu}/>
       <div className="desktop-menu">
         <ul>
           <li>Worship
@@ -32,7 +47,7 @@ export default function NavigationMenu() {
         </ul>
       </div>
       <div className="mobile-menu">
-        <HamburgerButton />
+        <HamburgerButton onClick={toggleMobileMenu} />
       </div>
       <style jsx>{`
         .desktop-menu {
