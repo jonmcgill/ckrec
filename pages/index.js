@@ -13,6 +13,7 @@ export default function Index() {
     <Page isHome>
       <PageContent center id="services">
         <img src={content.Home.contentImage} />
+        <Space y="60px" />
         <main>
           {content.SpecialServices.filter((s) => s.show).map((s) => (
             <div key={s.title}>
@@ -49,10 +50,6 @@ export default function Index() {
         <style jsx>{`
           h2 {
             margin-top: 0 !important;
-          }
-
-          main {
-            margin-top: 40px;
           }
 
           main div {

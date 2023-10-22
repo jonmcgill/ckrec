@@ -54,7 +54,7 @@ export default function PageContent({ bg, children, center, ...rest }) {
 
         @media screen and (min-width: 800px) {
           .page-content {
-            padding: 80px 30px;
+            padding: 60px 30px;
           }
 
           .page-content p,
