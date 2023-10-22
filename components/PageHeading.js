@@ -24,7 +24,7 @@ export default function PageHeading({ isHome, title }) {
     <>
       {/* <Navigation open={open} toggleOpen={toggleNav} /> */}
       <header className={open ? 'isOpen' : null}>
-        {isHome && <Logo color={util.theme().accent} />}
+        {isHome && (<Logo size="60px" sizeLg="60px" color={util.theme().accent} />)}
         {!isHome && (
           <div className="subpage-logo">
             <Link href="/">
@@ -41,34 +41,28 @@ export default function PageHeading({ isHome, title }) {
           </h1>
         )}
         {!isHome && (
-          <h1>{title}</h1>
+          <h1 className="text-shad-2">{title}</h1>
         )}
         <LineBreak color={util.theme().accent} />
         {isHome && <p className="text-shad-1">{content.Home.mission}</p>}
-        <button onClick={toggleNav}>
-          <span />
-        </button>
       </header>
       <style jsx>{`
         header {
           color: ${util.theme().text};
-          height: ${isHome ? '100vh' : '50vh'};
-          padding: 20px;
-          padding-top: ${isHome ? '14vh' : '6vh'};
+          padding-top: 56px;
           position: relative;
           text-align: center;
           background: ${util.theme().bgTitle};
           width: 100%;
-          margin-top: 0;
-          transition: margin-top 200ms ease-in-out;
           z-index: 3;
+          padding-bottom: 56px;
         }
 
         h1 {
           font-family: ${fonts.serif};
           font-size: 28px;
           line-height: 1.1;
-          padding: 30px 0 10px;
+          margin: 30px 0px;
         }
 
         h1 span {
@@ -79,7 +73,7 @@ export default function PageHeading({ isHome, title }) {
         p, aside {
           margin: 20px auto 0;
           font-family: ${fonts.sans};
-          line-height: 1.6;
+          text-align: center;
           max-width: 400px;
         }
 
@@ -90,61 +84,18 @@ export default function PageHeading({ isHome, title }) {
           font-size: 20px;
         }
 
-        button {
-          appearance: none;
-          border: none;
-          cursor: pointer;
-          padding: 0;
-          margin-top: 20px;
-          width: 46px;
-          height: 46px;
-          background: transparent;
-          z-index: 1;
-
-        }
-
-        button span {
-          display: block;
-          height: 2px;
-          background: ${util.theme().text};
-          position: relative;
-          margin: 18px auto;
-          width: 26px;
-        }
-
-        button span:before,
-        button span:after {
-          content: "";
-          display: block;
-          position: relative;
-          height: 2px;
-          background: ${util.theme().text};
-        }
-
-        button span:after {
-          bottom: -6px;
-        }
-
-        button span:before {
-          top: -8px;
-        }
-
         .subpage-logo {
           text-align: center;
         }
 
         @media screen and (min-width: 800px) {
-          header {
-            padding-top: ${isHome ? '16vh' : '8vh'};
-          }
-
           h1 {
             font-size: 42px;
           }
 
           h1 span {
             display: inline-block;
-            margin: 30px 5px 20px;
+            // margin: 30px 5px 20px;
           }
 
           p, aside {
@@ -154,7 +105,8 @@ export default function PageHeading({ isHome, title }) {
           p {
             font-size: 18px;
             margin-top: 30px;
-            line-height: 1.8;
+            // line-height: 1.8;
+
           }
 
           aside {

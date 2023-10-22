@@ -24,7 +24,9 @@ export default function NavigationBar() {
       <nav>
         <span className="home-link">
           <Link href="/">
-            <Logo color={util.theme().accent} size="30px" sizeLg="30px" />
+            <a>
+              <Logo color={util.theme().accent} size="30px" sizeLg="30px" />
+            </a>
           </Link>
         </span>
         <NavigationMenu />
