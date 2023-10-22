@@ -13,6 +13,7 @@ export default function NavigationBar() {
     }
 
     window.addEventListener('scroll', handleScroll);
+    setShowBackground(window.scrollY > 100);
 
     return () => {
       window.removeEventListener('scroll', handleScroll);
