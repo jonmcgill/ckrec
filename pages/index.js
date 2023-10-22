@@ -11,10 +11,10 @@ import { content } from '../content/content'
 export default function Index() {
   return (
     <Page isHome>
-      <PageContent center id="services">
+      <PageContent center>
         <img src={content.Home.contentImage} />
         <Space y="60px" />
-        <main>
+        <main id="services">
           {content.SpecialServices.filter((s) => s.show).map((s) => (
             <div key={s.title}>
               <h2>{s.title}</h2>

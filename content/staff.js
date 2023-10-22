@@ -29,17 +29,18 @@ and seven grandchildren and lives with his wife, Sandy.
 ## Parish Council
 
 - Fr. Wayne McNamara, Rector
-- Mike McDermott, Senior Warden
+- Daschel Fortner, Senior Warden
 - Jenny Downey, Junior Warden
 
 ## Parish Vestry
 
-- Mike McDermott, Senior Warden
+- Daschel Fortner, Senior Warden
 - Jenny Downey, Junior Warden
 - Dan Hack, Treasurer
 - Jeff Brown, Sexton
-- Tim Dana, Secretary
-- Lauren Hilyer
-- Amanda McGill
-- Bob Conger
+- Amanda McGill, Secretary
+- Jon McGill
+- Layne Hilyer
+- Zach Fehrman
+- Joe Cheatwood
 `
