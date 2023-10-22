@@ -1,5 +1,4 @@
 import { content } from '../content/content'
-import util from '../shared/util';
 
 export default function PageBackground() {
   return (
