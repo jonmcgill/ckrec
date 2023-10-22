@@ -2,8 +2,8 @@ import * as Services from './services'
 
 export const content = {
   BackgroundImg: {
-    desktop: '/img/bg-christ-kells-lg-2.jpg',
-    mobile: '/img/bg-christ-kells-sm-2.jpg',
+    desktop: '/img/bg-lg-altar.jpg',
+    mobile: '/img/bg-lg-altar.jpg',
   },
   Home: {
     titleTop: 'Christ the King',
