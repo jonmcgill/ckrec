@@ -1,6 +1,8 @@
-import util from '../shared/util';
 import { useState, useEffect } from 'react';
+import Link from 'next/link';
+import util from '../shared/util';
 import Logo from './Logo';
+import NavigationMenu from './NavigationMenu';
 
 export default function NavigationBar() {
   const [showBackground, setShowBackground] = useState(false);
@@ -20,9 +22,12 @@ export default function NavigationBar() {
   return (
     <>
       <nav>
-        <a className="home-link" href="/">
-          <Logo color={util.theme().accent} size="35px" sizeLg="35px" />
-        </a>
+        <span className="home-link">
+          <Link href="/">
+            <Logo color={util.theme().accent} size="30px" sizeLg="30px" />
+          </Link>
+        </span>
+        <NavigationMenu />
       </nav>
       <style jsx>{`
         nav {
@@ -35,7 +40,7 @@ export default function NavigationBar() {
           transition: background 0.1s linear;
           display: flex;
           align-items: center;
-          justify-content: space-between;
+          justify-content: ${showBackground ? 'space-between' : 'flex-end'};
         }
 
         nav .home-link {

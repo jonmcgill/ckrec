@@ -30,7 +30,7 @@ export default function Md({ children }) {
         }
   
         li {
-          margin-bottom: 12px !important;
+          margin-bottom: 12px;
         }
   
         img {
