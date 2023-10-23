@@ -1,8 +1,6 @@
 export const Content = `
 ## No Longer Strangers
 
-[![No Longer Strangers](/img/nls.png)](https://www.nolongerstrangers.org/)
-
 The over-arching philosophy of [No Longer Strangers](https://www.nolongerstrangers.org/)
 is to offer genuine Christian friendship to the refugee community. During the
 resettlement process, refugees experience a bureaucratic whirlwind that often
@@ -12,8 +10,6 @@ but just as importantly, to laugh with them, share in their sorrows, and to
 pray with them.
 
 ## St. Lazarus Mission
-
-[![St. Lazarus Mission](/img/st-lazarus-mission.png)](http://lazarusmission.org/)
 
 For more than twenty years, a team of dedicated lay ministers from Christ
 the King and Christ our Hope parishes in Dayton have partnered to form 
@@ -29,8 +25,6 @@ forgotten and put away, to be the local, missional church in each nursing
 home where they live with purpose, for the glory of God.
 
 ## Dominion Academy of Dayton
-
-[![Dominion Academy](/img/dominion-academy.png)](http://dominionacademy.org)
 
 [Dominion Academy of Dayton](http://dominionacademy.org) is a college preparatory school
 providing a classical education based on the Bible, reason, and Tradition. It was founded
