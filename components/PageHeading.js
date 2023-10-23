@@ -80,7 +80,6 @@ export default function PageHeading({ isHome, title }) {
 
           h1 span {
             display: inline-block;
-            // margin: 30px 5px 20px;
           }
 
           p, aside {
@@ -90,8 +89,6 @@ export default function PageHeading({ isHome, title }) {
           p {
             font-size: 18px;
             margin-top: 30px;
-            // line-height: 1.8;
-
           }
 
           aside {
