@@ -13,7 +13,6 @@ export default function Index() {
     <Page isHome>
       <PageContent center>
         <img src={content.Home.contentImage} />
-        <Space y="60px" />
         <main id="services">
           {content.SpecialServices.filter((s) => s.show).map((s) => (
             <div key={s.title}>

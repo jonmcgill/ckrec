@@ -1,3 +1,5 @@
+export const Image = '/img/ctk-elements.jpg';
+
 export const Content = `
 Commands, patterns, and principles of worship found in the Scriptures shape the
 content and order of our Holy Communion service. The basic form of our liturgy

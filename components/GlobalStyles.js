@@ -41,8 +41,9 @@ export default function GlobalStyles() {
       img {
         width: 100%;
         border-radius: 2px;
+        margin-bottom: 40px;
       }
-      
+
       .text-shad-1 {
         text-shadow: 1px 1px black;
       }

@@ -1,3 +1,5 @@
+export const Image = '/img/ctk-font.jpg';
+
 export const ChildrenAndWorshipContent = `
 Our goal is to incorporate our children into every aspect of parish worship and life.
 We want their earliest memories to be imbued with the full sensory experience of

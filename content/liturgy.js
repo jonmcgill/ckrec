@@ -1,3 +1,5 @@
+export const Image = '/img/ctk-sacristry.jpg';
+
 export const LiturgyContent = `
 The Church is God’s assembly called out of the world to be a people distinct in government,
 culture, and worship. The Scriptures exhort us to meet together for the purpose of worship.
