@@ -33,15 +33,15 @@ export default function NavigationMenu() {
           <span className="divider"/>
           <li>Ministry
             <ul>
-              <li><Link href="sunday-school"><a>Sunday school</a></Link></li>
-              <li><Link href="#"><a>Outreach</a></Link></li>{/* TODO add this page */}
+              <li><Link href="/sunday-school"><a>Sunday school</a></Link></li>
+              <li><Link href="/outreach"><a>Outreach</a></Link></li>
             </ul>
           </li>
           <span className="divider" />
           <li>Leadership
             <ul>
-              <li><Link href="clergy-and-staff"><a>Staff</a></Link></li>
-              <li><Link href="rec"><a>REC</a></Link></li>
+              <li><Link href="/clergy-and-staff"><a>Staff</a></Link></li>
+              <li><Link href="/rec"><a>REC</a></Link></li>
             </ul>
           </li>
         </ul>

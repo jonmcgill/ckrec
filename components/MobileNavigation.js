@@ -48,18 +48,8 @@ export default function MobileNavigation({ open, toggleOpen }) {
               </a>
             </li>
             <li>
-              <a href="/dominion-academy" onClick={navigate('/dominion-academy')}>
-                Dominion Academy
-              </a>
-            </li>
-            <li>
-              <a href="/no-longer-strangers" onClick={navigate('/no-longer-strangers')}>
-                No Longer Strangers
-              </a>
-            </li>
-            <li>
-              <a href="/st-lazarus" onClick={navigate('/st-lazarus')}>
-                St. Lazarus Mission
+              <a href="/outreach" onClick={navigate('/outreach')}>
+                Outreach
               </a>
             </li>
           </ul>
