@@ -1,5 +1,5 @@
 export const Content = `
-![REC Logo](/img/rec-logo.jpg)
+[![REC Logo](/img/rec-logo.jpg)](http://www.recus.org/)
 
 Built upon the foundation of the authoritative Word of God, the Holy Scriptures,
 the [Reformed Episcopal Church](http://www.recus.org/) sets her highest priority on biblical worship
