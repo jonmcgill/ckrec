@@ -41,7 +41,10 @@ export default function GlobalStyles() {
       img {
         width: 100%;
         border-radius: 2px;
-        margin-bottom: 40px;
+      }
+
+      img + .md-content {
+        margin-top: 40px;
       }
 
       .text-shad-1 {

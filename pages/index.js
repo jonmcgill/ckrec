@@ -51,6 +51,10 @@ export default function Index() {
             margin-top: 0 !important;
           }
 
+          main {
+            margin-top: 40px;
+          }
+
           main div {
             margin-top: 20px;
           }
