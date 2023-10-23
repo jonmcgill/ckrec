@@ -12,7 +12,7 @@ export default function Index() {
   return (
     <Page isHome>
       <PageContent center>
-        <img src={content.Home.contentImage} />
+        <img src={content.Home.image} />
         <main id="services">
           {content.SpecialServices.filter((s) => s.show).map((s) => (
             <div key={s.title}>

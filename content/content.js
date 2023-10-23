@@ -13,7 +13,7 @@ export const content = {
       in communion with other branches of Christ's Church to advance
       His Kingdom in all the earth.
     `,
-    contentImage: '/img/ctk-table.jpg'
+    image: '/img/ctk-table.jpg'
   },
   Contact: {
     phone: '937-224-8556',
