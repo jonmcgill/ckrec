@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import Link from 'next/link';
 import Logo from './Logo';
 import LineBreak from './LineBreak';
@@ -7,11 +6,9 @@ import { content } from '../content/content'
 import util from '../shared/util';
 
 export default function PageHeading({ isHome, title }) {
-  const [open, setOpen] = useState(false);
-
   return (
     <>
-      <header className={open ? 'isOpen' : null}>
+      <header>
         {isHome && (<Logo size="60px" sizeLg="60px" color={util.theme().accent} />)}
         {!isHome && (
           <div className="subpage-logo">
