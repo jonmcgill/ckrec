@@ -29,7 +29,7 @@ export default function Md({ children }) {
           margin-left: 40px;
         }
   
-        li {
+        .md-content li {
           margin-bottom: 12px;
         }
   

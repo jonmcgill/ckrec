@@ -43,6 +43,11 @@ export default function Footer() {
                     {content.Contact.email}
                   </a>
                 </li>
+                <li>
+                  <a href="https://www.facebook.com/ctkdayton/" target="__blank">
+                    Connect with us on Facebook
+                  </a>
+                </li>
               </ul>
             </div>
             <div className="footer-section">
@@ -62,11 +67,6 @@ export default function Footer() {
                 <li>
                   <Link href="/children-and-worship">
                     <a>Children and Worship</a>
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/sunday-schedules">
-                    <a>Sunday Schedules</a>
                   </Link>
                 </li>
               </ul>
