@@ -51,7 +51,5 @@ creation, understanding that all ultimate meaning is found in Christ alone.
 family life, incorporating the traditions of the liturgical year in the home. A website
 created by some of the women of our Christ the King parish.
 
-- **[Anglican Catechism](http://anglicanchurch.net/?/main/catechism)**: A recently
+- **[Anglican Catechism](https://anglicanchurch.net/catechism/)**: A recently
 released catechism designed for the renewal of Anglican catechetical practice.
-
-- **[Full Homely Divinity](http://fullhomelydivinity.org/)**
