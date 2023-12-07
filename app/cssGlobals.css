@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css?family=Cormorant+Unicase|Barlow');
+
+/*---------
+  VARIABLES
+---------*/
+
+:root {
+  /* colors */
+  --gold-1: #B8860B;
+  --gold-2: #C9971C;
+  --gold-3: #EBB93E;
+  --gold-4: #FEEC6F;
+  --gold-dark: #855307;
+  --green-dark: rgb(10, 25, 0);
+  --green-1: rgb(20, 45, 5);
+  --green-rgba-1: rgba(15, 35, 5, 0.75);
+  --tan: rgb(255, 248, 202);
+  --tan-rgba: rgba(255, 248, 202, 0.75);
+  --wine: #700a19;
+  --text-dark: rgb(18, 34, 50);
+  --text-light: #eee;
+  --text-light-2: #bbccdd;
+
+  /* fonts */
+  --font-prim: "Cormorant Unicase", "Palatino", "sans-serif";
+  --font-serif: "Times New Roman";
+  --font-sans: "Barlow", "Arial";
+
+  /* layout */
+  --edge-max-width: 1100px;
+  --content-max-width: 750px;
+  --content-max-width-narrow: 600px;
+}
+
+/*------
+  RESETS
+------*/
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: var(--sans);
+  background: var(--green-dark);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  background: none;
+  padding: none;
+  border: none;
+  font-size: 1rem;
+  font-family: inherit;
+  cursor: pointer;
+  color: inherit;
+}
+
+/*-----
+  Logo
+-----*/
+
+.logo {
+  fill: var(--gold-1);
+  display: inline-block;
+  position: relative;
+}
+
+.logo svg {
+  position: absolute;
+  width: calc(100% - 1px);
+  left: 0px;
+}
+
+.logo.box svg {
+  padding: 1rem;
+  border: 2px solid var(--gold-1);
+}
+
+.logo svg.shadow {
+  left: 1px;
+  top: 1px;
+  fill: black;
+}
+
+.logo.box svg.shadow {
+  border: 2px solid black;
+}
+
+/*-------
+  Utility
+-------*/
+
+.prim {
+  font-family: var(--font-prim);
+}
+
+.serif {
+  font-family: var(--font-serif);
+}
+
+.text-light {
+  color: var(--text-light);
+}
+
+.text-light-2 {
+  color: var(--text-light-2);
+}
+
+.text-dark {
+  color: var(--text-dark);
+}
+
+.center {
+  text-align: center;
+}
+
+.text-shadow {
+  text-shadow: 1.5px 1.5px black;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.line {
+  display: inline-block;
+  width: 100%;
+  max-width: 35%;
+  height: 3px;
+  background: var(--gold-2);
+  border-bottom: 1px solid black;
+}
+
+ul.clear {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+ul.clear li {
+  padding: 0;
+}
+
+.content-wrap {
+  max-width: var(--content-max-width);
+  margin: 0 auto;
+}
+
+.content-wrap-narrow {
+  max-width: var(--content-max-width-narrow);
+  margin: 0 auto;
+}
+
+.edge-wrap {
+  max-width: var(--edge-max-width);
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.between {
+  justify-content: space-between;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.thin {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+/*----
+  Page
+-----*/
+
+header {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+main {
+  background: var(--tan);
+  padding: 2rem 1.25rem;
+  font-family: var(--font-sans);
+  color: var(--text-dark);
+  border-top: 2px solid black;
+}
+
+.has-links a {
+  color: var(--gold-1);
+}
+
+.has-links a:hover {
+  color: var(--gold-3);
+  text-decoration: underline;
+}
+
+.has-links-dark a {
+  color: var(--gold-dark);
+  text-decoration: underline;
+}
+
+.has-links-dark a:hover {
+  color: var(--gold-1);
+  text-decoration: underline;
+}
+
+footer {
+  background: var(--green-dark);
+  padding: 2rem 1.25rem;
+  color: var(--text-light);
+  font-family: var(--font-sans);
+  line-height: 1.5;
+}
+
+footer .top {
+  justify-content: space-between;
+  padding-bottom: 3rem;
+}
+
+footer .col {
+  padding-bottom: 3rem;
+}
+
+footer .col-line {
+  width: 8rem;
+  border-top: 3px solid var(--text-light);
+  padding-bottom: 1rem;
+  opacity: 0.7;
+}
+
+footer .col-heading {
+  font-family: var(--font-prim);
+  font-size: 1.25rem;
+  display: block;
+  padding-bottom: 1rem;
+}
+
+footer ul li {
+  margin-bottom: 0.75rem;
+}
+
+footer .tag {
+  opacity: 0.5;
+}
+
+@media screen and (min-width: 750px) {
+  html {
+    font-size: 20px;
+  }
+
+  .line {
+    max-width: 200px;
+  }
+
+  header {
+    border-top: 3px solid black;
+  }
+
+  main, footer {
+    padding: 3rem 2rem;
+  }
+
+  footer .top {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 1350px) {
+  html {
+    font-size: 22px;
+  }
+}

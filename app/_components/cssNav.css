@@ -1,0 +1,100 @@
+nav {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  z-index: 10;
+  padding: 1rem;
+  color: var(--gold-1);
+  border-bottom: 1px solid transparent;
+  display: flex;
+  justify-content: center;
+}
+
+nav.scrolled {
+  background: var(--green-dark);
+  border-color: black;
+  transition: background 200ms, border-color 200ms;
+}
+
+.nav-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: var(--edge-max-width);
+}
+
+nav.scrolled .nav-inner {
+  justify-content: space-between;
+}
+
+.nav-inner .logo {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.nav-menu-items {
+  display: flex;
+}
+
+nav [data-nav-wrap] {
+  position: relative;
+  margin: 0 0.75rem;
+}
+
+nav [data-nav-top]:hover {
+  color: var(--text-light);
+}
+
+nav [data-nav-menu] {
+  position: absolute;
+  padding-top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0;
+  display: none;
+}
+
+nav.scrolled [data-nav-menu] {
+  left: -0.85rem;
+  transform: none;
+}
+
+nav ul {
+  background: var(--green-dark);
+  border-radius: 6px;
+  padding: 0.5rem 0;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+nav li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  white-space: nowrap;
+}
+
+nav li a {
+  display: block;
+  padding: 0.5rem 0.85rem;
+}
+nav li a:hover {
+  color: var(--text-light);
+}
+
+nav [data-nav-wrap].open [data-nav-menu] {
+  display: block;
+}
+
+nav [data-nav-wrap].open [data-nav-top] {
+  color: var(--text-light);
+}
+
+@media screen and (min-width: 750px) {
+  nav [data-nav-wrap] {
+    font-size: 1.1rem;
+    margin: 0 1.2rem;
+  }
+}

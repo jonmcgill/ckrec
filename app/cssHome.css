@@ -1,0 +1,77 @@
+header {
+  background-image: url("/images/bg-lg-altar.jpeg");
+  background-size: cover;
+  background-position: 50% 65%;
+  height: 100vh;
+}
+
+header .home-hero {
+  width: 100%;
+  height: 100%;
+  background-color: var(--green-rgba-1);
+  position: relative;
+}
+
+header .inner {
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-45%);
+}
+
+header .logo {
+  width: 5rem;
+  height: 5rem;
+}
+
+.home-hero h1 {
+  font-size: 2.5rem;
+  line-height: 0.95;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+
+.home-hero h1 span {
+  font-size: 1.75rem;
+}
+
+.home-hero p {
+  font-size: 1.1rem;
+  line-height: 1.4;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+}
+
+.home-hero .cross {
+  font-size: 1.5rem;
+  display: inline-block;
+}
+
+.event-block {
+  padding-bottom: 3rem;
+}
+
+.event-item {
+  padding-top: 1.5rem;
+}
+
+.home-content {
+  line-height: 1.5;
+}
+
+.home-content p {
+  margin: 1.5rem 0;
+}
+
+.home-content li {
+  margin-left: 2rem;
+  padding-left: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+@media screen and (min-width: 750px) {
+  header {
+    background-position: 50% 50%;
+  }
+}
