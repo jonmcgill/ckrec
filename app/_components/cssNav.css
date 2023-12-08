@@ -68,8 +68,8 @@ nav.scrolled [data-nav-menu] {
 nav ul {
   border-radius: 6px;
   padding: 0.5rem 0;
-  border-right: 2px solid black;
-  border-bottom: 2px solid black;
+  box-shadow: 0px 8px 15px 1px rgba(0,0,0,0.6);
+  border-bottom: 1px solid black;
 }
 
 nav li {
