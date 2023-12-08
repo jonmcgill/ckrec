@@ -6,6 +6,7 @@
 
 :root {
   /* colors */
+
   --gold-1: #B8860B;
   --gold-2: #C9971C;
   --gold-3: #EBB93E;
@@ -14,19 +15,41 @@
   --green-dark: rgb(10, 25, 0);
   --green-1: rgb(20, 45, 5);
   --green-rgba-1: rgba(15, 35, 5, 0.75);
-  --tan: rgb(255, 248, 202);
+  --tan: rgb(255, 250, 230);
   --tan-rgba: rgba(255, 248, 202, 0.75);
   --wine: #700a19;
   --text-dark: rgb(18, 34, 50);
   --text-light: #eee;
   --text-light-2: #bbccdd;
 
+  /* theming */
+
+  --bg-green: rgb(10, 25, 0);
+  --overlay-bg-green: rgba(10, 25, 0, 0.5);
+  --overlay-gradient-green: linear-gradient(
+    to top,
+    rgba(10, 25, 0, 0.8),
+    rgba(10, 25, 0, 0) 60%,
+    rgba(10, 25, 0, 0.8) 100%
+  );
+
+  --bg-blue: rgb(0, 30, 50);
+  --overlay-bg-blue: rgba(0, 30, 50, 0.5);
+  --overlay-gradient-blue: linear-gradient(
+    to top,
+    rgba(0, 30, 50, 0.8),
+    rgba(0, 30, 50, 0) 60%,
+    rgba(0, 30, 50, 0.8) 100%
+  );
+
   /* fonts */
+
   --font-prim: "Cormorant Unicase", "Palatino", "sans-serif";
   --font-serif: "Times New Roman";
   --font-sans: "Barlow", "Arial";
 
   /* layout */
+
   --edge-max-width: 1100px;
   --content-max-width: 750px;
   --content-max-width-narrow: 600px;
@@ -50,7 +73,6 @@ body {
 
 body {
   font-family: var(--sans);
-  background: var(--green-dark);
 }
 
 a {
@@ -186,17 +208,76 @@ ul.clear li {
   text-rendering: optimizeLegibility;
 }
 
-/*----
-  Page
+/*-----
+  Theme
 -----*/
+
+.bg-prim {
+  background-color: var(--green-dark);
+}
+.bg-content {
+  background-color: var(--tan);
+}
+.bg-accent {
+  background-color: var(--gold-1);
+}
+
+.Advent .bg-prim {
+  background-color: var(--bg-blue);
+}
+
+/*------
+  Header
+------*/
 
 header {
   border-top: 1px solid black;
   border-bottom: 1px solid black;
+  position: relative;
 }
 
+.header-bg {
+  background-image: url("/images/bg-lg-altar.jpeg");
+  background-size: cover;
+  background-position: 50% 65%;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+}
+
+.header-overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+.Advent .header-overlay {
+  background-color: var(--overlay-bg-blue);
+  background-image: var(--overlay-gradient-blue);
+}
+.Trinity .header-overlay {
+  background-color: var(--overlay-bg-green);
+  background-image: var(--overlay-gradient-green);
+}
+
+.header-content {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 3;
+}
+
+/*----
+  Page
+----*/
+
 main {
-  background: var(--tan);
   padding: 2rem 1.25rem;
   font-family: var(--font-sans);
   color: var(--text-dark);
@@ -234,7 +315,6 @@ main {
 }
 
 footer {
-  background: var(--green-dark);
   padding: 2rem 1.25rem;
   color: var(--text-light);
   font-family: var(--font-sans);
@@ -282,6 +362,7 @@ footer .tag {
   }
 
   header {
+    background-position: 50% 50%;
     border-top: 3px solid black;
   }
 

@@ -12,7 +12,6 @@ nav {
 }
 
 nav.scrolled {
-  background: var(--green-dark);
   border-color: black;
   transition: background 200ms, border-color 200ms;
 }
@@ -56,17 +55,21 @@ nav [data-nav-menu] {
   display: none;
 }
 
+nav [data-nav-wrap]:hover [data-nav-menu],
+nav [data-nav-top]:focus + [data-nav-menu] {
+  display: block;
+}
+
 nav.scrolled [data-nav-menu] {
   left: -0.85rem;
   transform: none;
 }
 
 nav ul {
-  background: var(--green-dark);
   border-radius: 6px;
   padding: 0.5rem 0;
-  border-right: 1px solid black;
-  border-bottom: 1px solid black;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
 }
 
 nav li {

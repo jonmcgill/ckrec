@@ -6,9 +6,11 @@ import { info } from './_info'
 export default function Home() {
   return (
     <>
-      <header className="home-header">
-        <div className="home-hero">
-          <div className="inner">
+      <header className="home">
+        <div className="header-bg" />
+        <div className="header-overlay" />
+        <div className="header-content">
+          <div className="header-home">
             <Logo box shadow />
             <h1 className="prim text-light text-shadow">
               Christ the King
@@ -27,7 +29,7 @@ export default function Home() {
           </div>
         </div>
       </header>
-      <main>
+      <main className="bg-content">
         <div className="home-content content-wrap-narrow has-links-dark">
           <EventBlocks />
           <h2 className="prim center">Virtual Services</h2>

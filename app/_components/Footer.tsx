@@ -5,7 +5,7 @@ import { info } from '@/app/_info'
 
 export default function Footer() {
   return (
-    <footer>
+    <footer className="bg-prim">
       <section className="edge-wrap has-links">
         <div className="top">
           <div className="col">
