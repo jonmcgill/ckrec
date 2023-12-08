@@ -203,6 +203,17 @@ main {
   border-top: 2px solid black;
 }
 
+.season {
+  font-family: var(--font-serif);
+  font-size: 1rem;
+  color: var(--gold-3);
+}
+
+.season span {
+  display: inline-block;
+  margin: 0 1rem;
+}
+
 .has-links a {
   color: var(--gold-1);
 }

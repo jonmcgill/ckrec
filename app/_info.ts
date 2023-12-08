@@ -1,4 +1,4 @@
-import { isDateBetween } from './utilClient'
+import { isDateBetween, getCalendar } from './utilClient'
 
 export type EventItem = {
   day: string
@@ -12,6 +12,9 @@ export type EventBlock = {
   title: string
   items: EventItem[]
 }
+
+const year = new Date().getFullYear()
+const calendar = getCalendar(year)
 
 const standardEvents: EventBlock = {
   title: 'Weekly Services',
@@ -35,7 +38,7 @@ const standardEvents: EventBlock = {
 
 const adventEvents: EventBlock = {
   title: 'Advent Events and Services',
-  show: isDateBetween('12/05/2023', '12/26/2023'),
+  show: calendar.season.name === 'Advent',
   items: [
     {
       day: 'Sunday',
@@ -138,7 +141,7 @@ export const holyWeekEvents: EventBlock = {
 }
 
 export const info = {
-  year: new Date().getFullYear(),
+  year,
   mapLink: 'https://www.google.com/maps/place/925+N+Main+St,+Dayton,+OH+45405',
   contact: {
     phone: '937-224-8556',
@@ -147,6 +150,7 @@ export const info = {
     facebook: 'https://www.facebook.com/ctkdayton',
     admin: 'parishadmin@ctkdayton.org',
   },
+  season: calendar.season.name,
   events: [
     adventEvents,
     lentEvents,

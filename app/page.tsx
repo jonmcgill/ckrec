@@ -21,8 +21,8 @@ export default function Home() {
               <br />
               Seeking the Kingdom.
             </p>
-            <span className="cross text-light text-shadow" id="Services">
-              ♱
+            <span className="season text-shadow" id="Services">
+              ♱ <span>{info.season}, {info.year}</span> ♱
             </span>
           </div>
         </div>
