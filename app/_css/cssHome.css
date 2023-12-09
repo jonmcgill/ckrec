@@ -1,0 +1,62 @@
+header.home {
+  height: 100vh;
+}
+
+header.home .header-home {
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-45%);
+}
+
+header.home .logo {
+  width: 4rem;
+  height: 4rem;
+}
+
+header.home h1 {
+  font-size: 2.25rem;
+  line-height: 0.9;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+header.home h1 span {
+  font-size: 1.5rem;
+}
+
+header.home p {
+  font-size: 1rem;
+  line-height: 1.4;
+  margin-top: 3vh;
+  margin-bottom: 8vh;
+}
+
+.event-block {
+  padding-bottom: 3rem;
+}
+
+.event-item {
+  padding-top: 1.5rem;
+}
+
+.home-content {
+  line-height: 1.5;
+}
+
+.home-content p {
+  margin: 1.5rem 0;
+}
+
+.home-content li {
+  margin-left: 2rem;
+  padding-left: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+@media screen and (min-width: 750px) {
+  header.home {
+    height: 75vh;
+  }
+}

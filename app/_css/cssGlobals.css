@@ -1,0 +1,515 @@
+@import url('https://fonts.googleapis.com/css?family=Cormorant+Unicase|Barlow');
+
+/*---------
+  VARIABLES
+---------*/
+
+:root {
+  /* colors */
+
+  --gold-0: #A67407;
+  --gold-1: #B8860B;
+  --gold-2: #C9971C;
+  --gold-3: #EBB93E;
+  --gold-4: #FEEC6F;
+  --gold-dark: #855307;
+  --green-dark: rgb(10, 25, 0);
+  --green-1: rgb(20, 45, 5);
+  --green-rgba-1: rgba(15, 35, 5, 0.75);
+  --tan: rgb(255, 250, 230);
+  --tan-dark: rgb(175, 165, 150);
+  --tan-rgba: rgba(255, 248, 202, 0.75);
+  --wine: #700a19;
+  --text-dark: rgb(18, 34, 50);
+  --text-light: #eee;
+  --text-light-2: #bbccdd;
+
+  /* theming */
+  --bg-white: white;
+  --overlay-bg-white: rgba(20, 40, 60, 0.45);
+  --overlay-gradient-white: linear-gradient(
+    to top,
+    rgba(20, 40, 60, 0.45),
+    rgba(20, 40, 60, 0) 60%,
+    rgba(20, 40, 60, 0.45) 100%
+  );
+
+  --bg-purple: rgb(40, 20, 40);
+  --overlay-bg-purple: rgba(40, 20, 40, 0.4);
+  --overlay-gradient-purple: linear-gradient(
+    to top,
+    rgba(40, 20, 40, 0.8),
+    rgba(40, 20, 40, 0) 60%,
+    rgba(40, 20, 40, 0.8) 100%
+  );
+
+  --bg-dark: rgb(0, 10, 10);
+  --overlay-bg-dark: rgba(0, 10, 10, 0.8);
+  --overlay-gradient-dark: linear-gradient(
+    to top,
+    rgba(0, 10, 10, 0.8),
+    rgba(0, 10, 10, 0) 60%,
+    rgba(0, 10, 10, 0.8) 100%
+  );
+
+  --bg-red: rgb(40, 10, 10);
+  --overlay-bg-red: rgba(40, 10, 10, 0.3);
+  --overlay-gradient-red: linear-gradient(
+    to top,
+    rgba(40, 10, 10, 0.8),
+    rgba(40, 10, 10, 0) 60%,
+    rgba(40, 10, 10, 0.8) 100%
+  );
+
+  --bg-green: rgb(10, 25, 0);
+  --overlay-bg-green: rgba(10, 25, 0, 0.4);
+  --overlay-gradient-green: linear-gradient(
+    to top,
+    rgba(10, 25, 0, 0.7),
+    rgba(10, 25, 0, 0) 60%,
+    rgba(10, 25, 0, 0.7) 100%
+  );
+
+  --bg-blue: rgb(0, 30, 50);
+  --overlay-bg-blue: rgba(0, 30, 50, 0.5);
+  --overlay-gradient-blue: linear-gradient(
+    to top,
+    rgba(0, 30, 50, 0.8),
+    rgba(0, 30, 50, 0) 60%,
+    rgba(0, 30, 50, 0.8) 100%
+  );
+
+  /* fonts */
+
+  --font-prim: "Cormorant Unicase", "Palatino", "sans-serif";
+  --font-serif: "Times New Roman";
+  --font-sans: "Barlow", "Arial";
+
+  /* layout */
+
+  --edge-max-width: 1100px;
+  --content-max-width: 750px;
+  --content-max-width-narrow: 600px;
+}
+
+/*------
+  RESETS
+------*/
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: var(--sans);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  background: none;
+  padding: 0;
+  border: none;
+  font-size: 1rem;
+  font-family: inherit;
+  cursor: pointer;
+  color: inherit;
+}
+
+/*-----
+  Logo
+-----*/
+
+.logo {
+  display: inline-block;
+  position: relative;
+}
+
+.logo svg {
+  position: absolute;
+  width: calc(100% - 1px);
+  left: 0px;
+}
+
+.logo.box svg {
+  padding: 0.65rem 0.85rem;
+  border-width: 2px;
+  border-style: solid;
+}
+
+.logo svg.shadow {
+  left: 1px;
+  top: 1px;
+  fill: black;
+}
+
+.logo.box svg.shadow {
+  border: 2px solid black;
+}
+
+/*-------
+  Utility
+-------*/
+
+.prim {
+  font-family: var(--font-prim);
+}
+
+.serif {
+  font-family: var(--font-serif);
+}
+
+.text-light {
+  color: var(--text-light);
+}
+
+.text-light-2 {
+  color: var(--text-light-2);
+}
+
+.text-dark {
+  color: var(--text-dark);
+}
+
+.center {
+  text-align: center;
+}
+
+.text-shadow {
+  text-shadow: 1.5px 1.5px black;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.line {
+  display: inline-block;
+  width: 100%;
+  max-width: 35%;
+  height: 3px;
+  background: var(--gold-2);
+  border-bottom: 1px solid black;
+}
+
+ul.clear {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+ul.clear li {
+  padding: 0;
+}
+
+.content-wrap {
+  max-width: var(--content-max-width);
+  margin: 0 auto;
+}
+
+.content-wrap-narrow {
+  max-width: var(--content-max-width-narrow);
+  margin: 0 auto;
+}
+
+.edge-wrap {
+  max-width: var(--edge-max-width);
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.between {
+  justify-content: space-between;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.thin {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+/*------
+  Header
+------*/
+
+header {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  position: relative;
+}
+
+.header-bg {
+  background-image: url("/images/bg-lg-altar.jpeg");
+  background-size: cover;
+  background-position: 50% 65%;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+}
+
+.header-overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+.header-content {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 3;
+}
+
+/*----
+  Page
+----*/
+
+main {
+  padding: 2rem 1.25rem;
+  font-family: var(--font-sans);
+  color: var(--text-dark);
+}
+
+.season {
+  font-family: var(--font-serif);
+  font-size: 1rem;
+}
+
+.season span {
+  display: inline-block;
+  margin: 0 1rem;
+}
+
+.has-links a {
+  color: var(--gold-1);
+}
+
+.has-links a:hover {
+  color: var(--gold-3);
+  text-decoration: underline;
+}
+
+.has-links-dark a {
+  color: var(--gold-dark);
+  text-decoration: underline;
+}
+
+.has-links-dark a:hover {
+  color: var(--gold-1);
+  text-decoration: underline;
+}
+
+/*------
+  Footer
+------*/
+
+footer {
+  padding: 2rem 1.25rem;
+  color: var(--text-light);
+  font-family: var(--font-sans);
+  line-height: 1.5;
+  border-top: 1px solid black;
+}
+
+footer .top {
+  justify-content: space-between;
+  padding-bottom: 3rem;
+}
+
+footer .col {
+  padding-bottom: 3rem;
+  text-align: center;
+}
+
+footer .col-line {
+  width: 8rem;
+  border-top: 3px solid var(--text-light);
+  padding-bottom: 1rem;
+  opacity: 0.7;
+  margin: 0 auto;
+}
+
+footer .col-heading {
+  font-family: var(--font-prim);
+  font-size: 1.25rem;
+  display: block;
+  padding-bottom: 1rem;
+}
+
+footer ul li {
+  margin-bottom: 0.75rem;
+}
+
+footer .tag {
+  opacity: 0.5;
+  text-align: center;
+}
+
+/*-----
+  Theme
+  White, Purple, Red, Green, Blue
+-----*/
+
+.bg-prim {
+  background-color: var(--bg-green);
+}
+.bg-content {
+  background-color: var(--tan);
+}
+.bg-accent {
+  background-color: var(--gold-1);
+}
+.text-accent {
+  color: var(--gold-1);
+  fill: var(--gold-1);
+  border-color: var(--gold-1) !important;
+}
+
+/* White */
+.White .bg-prim {
+  background-color: white;
+}
+.White .header-overlay {
+  background-color: var(--overlay-bg-white);
+  background-image: var(--overlay-gradient-white);
+}
+.White .header-bg {
+  filter: saturate(0.75) brightness(1.25);
+}
+.White .bg-content {
+  background-color: white;
+}
+.White .text-accent {
+  color: var(--gold-2);
+  fill: var(--gold-2);
+  border-color: var(--gold-2) !important;
+}
+.White .line {
+  background: var(--gold-3);
+}
+.White .season {
+  color: white;
+}
+.White .has-links-dark a,
+.White .has-links a {
+  color: var(--gold-0);
+}
+.White footer {
+  color: var(--text-dark);
+}
+.White footer,
+.White footer .col-line {
+  border-color: var(--gold-0);
+}
+
+/* Purple */
+.Purple .bg-prim {
+  background-color: var(--bg-purple);
+}
+.Purple .header-overlay {
+  background-color: var(--overlay-bg-purple);
+  background-image: var(--overlay-gradient-purple);
+}
+
+/* Dark */
+.Dark .bg-prim {
+  background-color: var(--bg-dark);
+}
+.Dark .header-overlay {
+  background-color: var(--overlay-bg-dark);
+  background-image: var(--overlay-gradient-dark);
+}
+.Dark .bg-content {
+  background-color: var(--tan-dark);
+}
+
+/* Red */
+.Red .bg-prim {
+  background-color: var(--bg-red);
+}
+.Red .header-overlay {
+  background-color: var(--overlay-bg-red);
+  background-image: var(--overlay-gradient-red);
+}
+
+/* Green */
+.Green .bg-prim {
+  background-color: var(--bg-green);
+}
+.Green .header-overlay {
+  background-color: var(--overlay-bg-green);
+  background-image: var(--overlay-gradient-green);
+}
+
+/* Blue */
+.Blue .bg-prim {
+  background-color: var(--bg-blue);
+}
+.Blue .header-overlay {
+  background-color: var(--overlay-bg-blue);
+  background-image: var(--overlay-gradient-blue);
+}
+
+@media screen and (min-width: 750px) {
+  html {
+    font-size: 20px;
+  }
+
+  .line {
+    max-width: 200px;
+  }
+
+  header {
+    background-position: 50% 50%;
+    border-width: 2px;
+  }
+
+  main, footer {
+    padding: 3rem 2rem;
+  }
+
+  footer .top {
+    display: flex;
+  }
+
+  footer .col {
+    text-align: left;
+  }
+
+  footer .col-line {
+    margin: 0;
+  }
+
+  footer .tag {
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 1350px) {
+  html {
+    font-size: 22px;
+  }
+}
