@@ -7,7 +7,7 @@ header.home .header-home {
   position: absolute;
   width: 100%;
   top: 50%;
-  transform: translateY(-42%);
+  transform: translateY(-45%);
 }
 
 header.home .logo {
@@ -29,8 +29,8 @@ header.home h1 span {
 header.home p {
   font-size: 1rem;
   line-height: 1.4;
-  margin-top: 2vh;
-  margin-bottom: 3vh;
+  margin-top: 3vh;
+  margin-bottom: 8vh;
 }
 
 header.home .cross {

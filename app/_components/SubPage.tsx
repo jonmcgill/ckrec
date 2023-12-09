@@ -12,16 +12,14 @@ type SubPageProps = {
 
 export default async function SubPage(props: SubPageProps) {
   const { htmlContent } = await getContentMarkdown(props.metaUrl)
-  const css = cssClasses({
-    'sub-page-main': true,
-    'first-letter': !props.noFirstLetter,
-  })
 
   return (
     <>
-      <header className="sub-page-header">
-        <div className="sub-page-hero">
-          <div className="inner">
+      <header className="sub">
+        <div className="header-bg" />
+        <div className="header-overlay" />
+        <div className="header-content">
+          <div className="header-sub">
             <Link href="/">
               <Logo shadow />
             </Link>
@@ -36,7 +34,7 @@ export default async function SubPage(props: SubPageProps) {
           </div>
         </div>
       </header>
-      <main className={css}>
+      <main className="sub bg-content">
         <section
           className="content-wrap has-links-dark"
           dangerouslySetInnerHTML={{ __html: htmlContent }}

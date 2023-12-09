@@ -68,9 +68,6 @@ export default function Footer() {
               <li>
                 <Link href="/children-and-worship">Children & Worship</Link>
               </li>
-              <li>
-                <Link href="/sunday-schedules">Sunday Schedules</Link>
-              </li>
             </ul>
           </div>
         </div>

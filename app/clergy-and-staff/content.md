@@ -1,7 +1,7 @@
 ## Bishop
 
-<div class="img-float less-wash">
-  <img src="/images/ctk-bp-manto.png" alt="Bishop Manto" />
+<div class="img-float clear">
+  <img src="/images/clergy-bp-manto.jpeg" alt="Bishop Manto" />
 </div>
 
 The Rt. Rev. Peter Manto is rector of Trinity Church and Bishop Ordinary of the REC's Diocese
@@ -12,8 +12,8 @@ over 40 years. They have four adult children and 13 grandchildren.
 
 ## Parish Rector
 
-<div class="img-float less-wash">
-  <img src="/images/ctk-fr-wayne.png" alt="Father Wayne McNamara" />
+<div class="img-float clear">
+  <img src="/images/clergy-fr-wayne.jpeg" alt="Father Wayne McNamara" />
 </div>
 
 Fr. Wayne became rector of Christ the King in 1992 after 12 years of serving in special education.

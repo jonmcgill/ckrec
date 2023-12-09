@@ -1,4 +1,4 @@
-The Church is God’s assembly called out of the world to be a people distinct in government,
+<span>T</span>he Church is God’s assembly called out of the world to be a people distinct in government,
 culture, and worship. The Scriptures exhort us to meet together for the purpose of worship.
 Often the primary questions people have are; "Am I having a good time?", "Are we moved by
 the sermon?", "Are we having good fellowship?" While some of these questions touch legitimate

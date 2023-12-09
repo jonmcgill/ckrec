@@ -1,4 +1,4 @@
-Our goal is to incorporate our children into every aspect of parish worship and life.
+<span>O</span>ur goal is to incorporate our children into every aspect of parish worship and life.
 We want their earliest memories to be imbued with the full sensory experience of
 Eucharistic celebration. Children are lovingly invited to our services to participate
 in the rhythms of the liturgy.

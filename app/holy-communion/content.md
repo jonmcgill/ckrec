@@ -1,4 +1,4 @@
-Commands, patterns, and principles of worship found in the Scriptures shape the
+<span>C</span>ommands, patterns, and principles of worship found in the Scriptures shape the
 content and order of our Holy Communion service. The basic form of our liturgy
 is found in the Book of Common Prayer of the Reformed Episcopal Church. It
 employs liturgical patterns, songs, prayers, and words that are thoroughly based

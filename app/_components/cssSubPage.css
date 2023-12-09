@@ -1,68 +1,58 @@
-header.sub-page-header {
-  background-image: url("/images/bg-lg-altar.jpeg");
-  background-size: cover;
-  background-position: 50% 35%;
+header.sub {
   height: 50vh;
 }
 
-header .sub-page-hero {
-  width: 100%;
-  height: 100%;
-  background-color: var(--green-rgba-1);
-  position: relative;
-}
-
-header .inner {
+header.sub .header-sub {
   text-align: center;
   position: absolute;
   width: 100%;
   top: 50%;
-  transform: translateY(-45%);
+  transform: translateY(-30%);
 }
 
-header.sub-page-header .logo {
+header.sub .logo {
   width: 2.5rem;
   height: 2.5rem;
 }
 
-.sub-page-hero h1 {
+header.sub h1 {
   font-size: 2rem;
-  margin-top: 2rem;
-  margin-bottom: 1rem;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
 }
 
-.sub-page-hero .cross {
+header.sub .cross {
   font-size: 1.5rem;
   display: inline-block;
-  margin-top: 2rem;
+  margin-top: 2vh;
 }
 
-.sub-page-main {
+main.sub {
   line-height: 1.9;
 }
 
-.sub-page-main h2 {
+main.sub h2 {
   font-family: var(--font-prim);
   margin-top: 3.5rem;
   margin-bottom: 1.75rem;
   line-height: 1.25;
 }
 
-.sub-page-main h2:first-child {
+main.sub h2:first-child {
   margin-top: 0;
 }
 
-.sub-page-main p {
+main.sub p {
   margin-bottom: 1.5rem;
 }
 
-.sub-page-main img {
+main.sub img {
   border: 1px solid rgba(0,0,0,0.2);
   border-radius: 4px;
-  filter: sepia(1) brightness(2);
+  filter: sepia(1.75) brightness(1.5);
 }
 
-.sub-page-main .img-float {
+main.sub .img-float {
   border: 1px solid rgba(0,0,0,0.2);
   border-radius: 4px;
   padding: 0.5rem;
@@ -70,37 +60,41 @@ header.sub-page-header .logo {
   margin-right: 1.5rem;
 }
 
-.sub-page-main .less-wash img {
+main.sub .less-wash img {
   filter: sepia(0.75);
 }
 
-.sub-page-main .img-float img {
-  display: block;
-  width: 7rem;
+main.sub .clear img {
+  filter: none;
 }
 
-.sub-page-main .img-block {
+main.sub .img-float img {
+  display: block;
+  width: 8rem;
+}
+
+main.sub .img-block {
   border: 1px solid rgba(0,0,0,0.2);
   border-radius: 4px;
   padding: 1rem;
 }
 
-.sub-page-main .img-block + p,
-.sub-page-main ul + p {
+main.sub .img-block + p,
+main.sub ul + p {
   margin-top: 1.5rem;
 }
 
-.sub-page-main .img-block img {
+main.sub .img-block img {
   width: 100%;
   display: block;
 }
 
-.sub-page-main li {
+main.sub li {
   padding-left: 0.75rem;
   margin-left: 1.75rem;
 }
 
-.sub-page-main .cross {
+main.sub .cross {
   font-size: 2rem;
   display: block;
   text-align: center;
@@ -108,14 +102,18 @@ header.sub-page-header .logo {
   margin-top: 3rem;
 }
 
-.sub-page-main.first-letter section::first-letter {
-  initial-letter: 2;
+main.sub p:first-child span:first-child {
   margin-right: 0.75rem;
+  font-size: 4rem;
   font-family: var(--font-prim);
+  display: block;
+  float: left;
+  height: 50px;
+  line-height: 1;
 }
 
 @media screen and (min-width: 750px) {
-  .sub-page-main .img-block {
+  main.sub .img-block {
     padding: 2rem;
   }
 }

@@ -314,6 +314,10 @@ main {
   text-decoration: underline;
 }
 
+/*------
+  Footer
+------*/
+
 footer {
   padding: 2rem 1.25rem;
   color: var(--text-light);
@@ -328,6 +332,7 @@ footer .top {
 
 footer .col {
   padding-bottom: 3rem;
+  text-align: center;
 }
 
 footer .col-line {
@@ -335,6 +340,7 @@ footer .col-line {
   border-top: 3px solid var(--text-light);
   padding-bottom: 1rem;
   opacity: 0.7;
+  margin: 0 auto;
 }
 
 footer .col-heading {
@@ -350,6 +356,7 @@ footer ul li {
 
 footer .tag {
   opacity: 0.5;
+  text-align: center;
 }
 
 @media screen and (min-width: 750px) {
@@ -372,6 +379,18 @@ footer .tag {
 
   footer .top {
     display: flex;
+  }
+
+  footer .col {
+    text-align: left;
+  }
+
+  footer .col-line {
+    margin: 0;
+  }
+
+  footer .tag {
+    text-align: left;
   }
 }
 
