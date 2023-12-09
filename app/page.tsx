@@ -24,7 +24,7 @@ export default function Home() {
               Seeking the Kingdom.
             </p>
             <span className="season text-accent text-shadow" id="Services">
-              ♱ <span>{info.season}, {info.year}</span> ♱
+              ♱ <span>{info.season.name}, {info.year}</span> ♱
             </span>
           </div>
         </div>

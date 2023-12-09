@@ -150,8 +150,7 @@ export const info = {
     facebook: 'https://www.facebook.com/ctkdayton',
     admin: 'parishadmin@ctkdayton.org',
   },
-  season: calendar.season.name,
-  theme: 'White',
+  ...calendar,
   events: [
     adventEvents,
     lentEvents,

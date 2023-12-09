@@ -16,7 +16,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={info.theme}>
+      <body className={info.season.theme}>
         <Nav />
         {children}
         <Footer />

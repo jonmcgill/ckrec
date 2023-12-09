@@ -17,6 +17,7 @@
   --green-1: rgb(20, 45, 5);
   --green-rgba-1: rgba(15, 35, 5, 0.75);
   --tan: rgb(255, 250, 230);
+  --tan-dark: rgb(175, 165, 150);
   --tan-rgba: rgba(255, 248, 202, 0.75);
   --wine: #700a19;
   --text-dark: rgb(18, 34, 50);
@@ -33,13 +34,40 @@
     rgba(20, 40, 60, 0.45) 100%
   );
 
+  --bg-purple: rgb(40, 20, 40);
+  --overlay-bg-purple: rgba(40, 20, 40, 0.4);
+  --overlay-gradient-purple: linear-gradient(
+    to top,
+    rgba(40, 20, 40, 0.8),
+    rgba(40, 20, 40, 0) 60%,
+    rgba(40, 20, 40, 0.8) 100%
+  );
+
+  --bg-dark: rgb(0, 10, 10);
+  --overlay-bg-dark: rgba(0, 10, 10, 0.8);
+  --overlay-gradient-dark: linear-gradient(
+    to top,
+    rgba(0, 10, 10, 0.8),
+    rgba(0, 10, 10, 0) 60%,
+    rgba(0, 10, 10, 0.8) 100%
+  );
+
+  --bg-red: rgb(40, 10, 10);
+  --overlay-bg-red: rgba(40, 10, 10, 0.3);
+  --overlay-gradient-red: linear-gradient(
+    to top,
+    rgba(40, 10, 10, 0.8),
+    rgba(40, 10, 10, 0) 60%,
+    rgba(40, 10, 10, 0.8) 100%
+  );
+
   --bg-green: rgb(10, 25, 0);
-  --overlay-bg-green: rgba(10, 25, 0, 0.5);
+  --overlay-bg-green: rgba(10, 25, 0, 0.4);
   --overlay-gradient-green: linear-gradient(
     to top,
-    rgba(10, 25, 0, 0.8),
+    rgba(10, 25, 0, 0.7),
     rgba(10, 25, 0, 0) 60%,
-    rgba(10, 25, 0, 0.8) 100%
+    rgba(10, 25, 0, 0.7) 100%
   );
 
   --bg-blue: rgb(0, 30, 50);
@@ -398,8 +426,34 @@ footer .tag {
 }
 
 /* Purple */
+.Purple .bg-prim {
+  background-color: var(--bg-purple);
+}
+.Purple .header-overlay {
+  background-color: var(--overlay-bg-purple);
+  background-image: var(--overlay-gradient-purple);
+}
+
+/* Dark */
+.Dark .bg-prim {
+  background-color: var(--bg-dark);
+}
+.Dark .header-overlay {
+  background-color: var(--overlay-bg-dark);
+  background-image: var(--overlay-gradient-dark);
+}
+.Dark .bg-content {
+  background-color: var(--tan-dark);
+}
 
 /* Red */
+.Red .bg-prim {
+  background-color: var(--bg-red);
+}
+.Red .header-overlay {
+  background-color: var(--overlay-bg-red);
+  background-image: var(--overlay-gradient-red);
+}
 
 /* Green */
 .Green .bg-prim {

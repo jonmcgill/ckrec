@@ -48,6 +48,7 @@ export function getCalendar(year: number) {
   const christmas = new Date(`12/25/${year}`)
   const epiphany = add(new Date(`12/25/${year - 1}`), { days: 12 })
   const easter = getEaster(year)
+  const holyWeek = sub(easter, { days: 6 })
   const lent = sub(easter, { days: 46 })
   const pentecost = add(easter, { days: 49 })
   const trinity = add(pentecost, { days: 7 })
@@ -55,6 +56,7 @@ export function getCalendar(year: number) {
   const seasons = [
     { name: 'Epiphany', date: epiphany, theme: 'White' },
     { name: 'Lent', date: lent, theme: 'Purple' },
+    { name: 'Holy Week', date: holyWeek, theme: 'Dark' },
     { name: 'Easter', date: easter, theme: 'White' },
     { name: 'Pentecost', date: pentecost, theme: 'Red' },
     { name: 'Trinity', date: trinity, theme: 'Green' },
