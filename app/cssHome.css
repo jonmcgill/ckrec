@@ -7,30 +7,30 @@ header.home .header-home {
   position: absolute;
   width: 100%;
   top: 50%;
-  transform: translateY(-45%);
+  transform: translateY(-42%);
 }
 
 header.home .logo {
-  width: 5rem;
-  height: 5rem;
+  width: 4rem;
+  height: 4rem;
 }
 
 header.home h1 {
-  font-size: 2.5rem;
-  line-height: 0.95;
-  margin-top: 4rem;
-  margin-bottom: 2rem;
+  font-size: 2.25rem;
+  line-height: 0.9;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
 }
 
 header.home h1 span {
-  font-size: 1.75rem;
+  font-size: 1.5rem;
 }
 
 header.home p {
-  font-size: 1.1rem;
+  font-size: 1rem;
   line-height: 1.4;
-  margin-top: 2rem;
-  margin-bottom: 4rem;
+  margin-top: 2vh;
+  margin-bottom: 3vh;
 }
 
 header.home .cross {

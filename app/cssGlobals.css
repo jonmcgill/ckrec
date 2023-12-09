@@ -107,7 +107,7 @@ button {
 }
 
 .logo.box svg {
-  padding: 1rem;
+  padding: 0.65rem 0.85rem;
   border: 2px solid var(--gold-1);
 }
 
@@ -213,7 +213,7 @@ ul.clear li {
 -----*/
 
 .bg-prim {
-  background-color: var(--green-dark);
+  background-color: var(--bg-green);
 }
 .bg-content {
   background-color: var(--tan);
