@@ -1,8 +1,7 @@
 import Link from 'next/link'
 import { Logo } from './Logo'
 import { getContentMarkdown } from '../util'
-import { cssClasses } from '../utilClient'
-import './cssSubPage.css'
+import '@/app/_css/cssSubPage.css'
 
 type SubPageProps = {
   title: string

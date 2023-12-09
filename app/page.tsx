@@ -1,7 +1,7 @@
-import './cssHome.css'
 import { Logo } from './_components/Logo'
 import { EventBlocks } from './_components/EventBlock'
 import { info } from './_info'
+import '@/app/_css/cssHome.css'
 
 export default function Home() {
   return (
@@ -23,7 +23,7 @@ export default function Home() {
               <br />
               Seeking the Kingdom.
             </p>
-            <span className="season text-shadow" id="Services">
+            <span className="season text-accent text-shadow" id="Services">
               ♱ <span>{info.season}, {info.year}</span> ♱
             </span>
           </div>

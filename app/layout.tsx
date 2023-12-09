@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Nav from './_components/Nav'
 import Footer from './_components/Footer'
 import { info } from './_info'
-import './cssGlobals.css'
+import '@/app/_css/cssGlobals.css'
 
 export const metadata: Metadata = {
   title: 'Christ the King Anglican Church',
@@ -16,7 +16,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={info.season}>
+      <body className={info.theme}>
         <Nav />
         {children}
         <Footer />

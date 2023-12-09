@@ -53,13 +53,13 @@ export function getCalendar(year: number) {
   const trinity = add(pentecost, { days: 7 })
 
   const seasons = [
-    { name: 'Epiphany', date: epiphany },
-    { name: 'Lent', date: lent },
-    { name: 'Easter', date: easter },
-    { name: 'Pentecost', date: pentecost },
-    { name: 'Trinity', date: trinity },
-    { name: 'Advent', date: advent },
-    { name: 'Christmas', date: christmas },
+    { name: 'Epiphany', date: epiphany, theme: 'White' },
+    { name: 'Lent', date: lent, theme: 'Purple' },
+    { name: 'Easter', date: easter, theme: 'White' },
+    { name: 'Pentecost', date: pentecost, theme: 'Red' },
+    { name: 'Trinity', date: trinity, theme: 'Green' },
+    { name: 'Advent', date: advent, theme: 'Blue' },
+    { name: 'Christmas', date: christmas, theme: 'White' },
   ]
 
   let season = seasons[6]
@@ -70,7 +70,8 @@ export function getCalendar(year: number) {
         if (i === 0 ) {
           season = {
             name: 'Christmas',
-            date: new Date(`12/25/${year - 1}`)
+            date: new Date(`12/25/${year - 1}`),
+            theme: 'White',
           }
         } else {
           season = seasons[i - 1]

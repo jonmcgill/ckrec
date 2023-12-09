@@ -151,6 +151,7 @@ export const info = {
     admin: 'parishadmin@ctkdayton.org',
   },
   season: calendar.season.name,
+  theme: 'White',
   events: [
     adventEvents,
     lentEvents,

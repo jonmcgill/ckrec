@@ -33,11 +33,6 @@ header.home p {
   margin-bottom: 8vh;
 }
 
-header.home .cross {
-  font-size: 1.5rem;
-  display: inline-block;
-}
-
 .event-block {
   padding-bottom: 3rem;
 }

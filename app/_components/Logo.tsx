@@ -24,7 +24,7 @@ export function Logo(props: LogoProps) {
   return (
     <span className={css}>
       {props.shadow && <LogoSvg css="shadow" />}
-      <LogoSvg />
+      <LogoSvg css="text-accent" />
     </span>
   )
 }

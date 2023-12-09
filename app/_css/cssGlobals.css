@@ -7,6 +7,7 @@
 :root {
   /* colors */
 
+  --gold-0: #A67407;
   --gold-1: #B8860B;
   --gold-2: #C9971C;
   --gold-3: #EBB93E;
@@ -23,6 +24,14 @@
   --text-light-2: #bbccdd;
 
   /* theming */
+  --bg-white: white;
+  --overlay-bg-white: rgba(20, 40, 60, 0.45);
+  --overlay-gradient-white: linear-gradient(
+    to top,
+    rgba(20, 40, 60, 0.45),
+    rgba(20, 40, 60, 0) 60%,
+    rgba(20, 40, 60, 0.45) 100%
+  );
 
   --bg-green: rgb(10, 25, 0);
   --overlay-bg-green: rgba(10, 25, 0, 0.5);
@@ -82,7 +91,7 @@ a {
 
 button {
   background: none;
-  padding: none;
+  padding: 0;
   border: none;
   font-size: 1rem;
   font-family: inherit;
@@ -95,7 +104,6 @@ button {
 -----*/
 
 .logo {
-  fill: var(--gold-1);
   display: inline-block;
   position: relative;
 }
@@ -108,7 +116,8 @@ button {
 
 .logo.box svg {
   padding: 0.65rem 0.85rem;
-  border: 2px solid var(--gold-1);
+  border-width: 2px;
+  border-style: solid;
 }
 
 .logo svg.shadow {
@@ -208,24 +217,6 @@ ul.clear li {
   text-rendering: optimizeLegibility;
 }
 
-/*-----
-  Theme
------*/
-
-.bg-prim {
-  background-color: var(--bg-green);
-}
-.bg-content {
-  background-color: var(--tan);
-}
-.bg-accent {
-  background-color: var(--gold-1);
-}
-
-.Advent .bg-prim {
-  background-color: var(--bg-blue);
-}
-
 /*------
   Header
 ------*/
@@ -257,15 +248,6 @@ header {
   z-index: 2;
 }
 
-.Advent .header-overlay {
-  background-color: var(--overlay-bg-blue);
-  background-image: var(--overlay-gradient-blue);
-}
-.Trinity .header-overlay {
-  background-color: var(--overlay-bg-green);
-  background-image: var(--overlay-gradient-green);
-}
-
 .header-content {
   width: 100%;
   height: 100%;
@@ -281,13 +263,11 @@ main {
   padding: 2rem 1.25rem;
   font-family: var(--font-sans);
   color: var(--text-dark);
-  border-top: 2px solid black;
 }
 
 .season {
   font-family: var(--font-serif);
   font-size: 1rem;
-  color: var(--gold-3);
 }
 
 .season span {
@@ -323,6 +303,7 @@ footer {
   color: var(--text-light);
   font-family: var(--font-sans);
   line-height: 1.5;
+  border-top: 1px solid black;
 }
 
 footer .top {
@@ -359,6 +340,85 @@ footer .tag {
   text-align: center;
 }
 
+/*-----
+  Theme
+  White, Purple, Red, Green, Blue
+-----*/
+
+.bg-prim {
+  background-color: var(--bg-green);
+}
+.bg-content {
+  background-color: var(--tan);
+}
+.bg-accent {
+  background-color: var(--gold-1);
+}
+.text-accent {
+  color: var(--gold-1);
+  fill: var(--gold-1);
+  border-color: var(--gold-1) !important;
+}
+
+/* White */
+.White .bg-prim {
+  background-color: white;
+}
+.White .header-overlay {
+  background-color: var(--overlay-bg-white);
+  background-image: var(--overlay-gradient-white);
+}
+.White .header-bg {
+  filter: saturate(0.75) brightness(1.25);
+}
+.White .bg-content {
+  background-color: white;
+}
+.White .text-accent {
+  color: var(--gold-2);
+  fill: var(--gold-2);
+  border-color: var(--gold-2) !important;
+}
+.White .line {
+  background: var(--gold-3);
+}
+.White .season {
+  color: white;
+}
+.White .has-links-dark a,
+.White .has-links a {
+  color: var(--gold-0);
+}
+.White footer {
+  color: var(--text-dark);
+}
+.White footer,
+.White footer .col-line {
+  border-color: var(--gold-0);
+}
+
+/* Purple */
+
+/* Red */
+
+/* Green */
+.Green .bg-prim {
+  background-color: var(--bg-green);
+}
+.Green .header-overlay {
+  background-color: var(--overlay-bg-green);
+  background-image: var(--overlay-gradient-green);
+}
+
+/* Blue */
+.Blue .bg-prim {
+  background-color: var(--bg-blue);
+}
+.Blue .header-overlay {
+  background-color: var(--overlay-bg-blue);
+  background-image: var(--overlay-gradient-blue);
+}
+
 @media screen and (min-width: 750px) {
   html {
     font-size: 20px;
@@ -370,7 +430,7 @@ footer .tag {
 
   header {
     background-position: 50% 50%;
-    border-top: 3px solid black;
+    border-width: 2px;
   }
 
   main, footer {

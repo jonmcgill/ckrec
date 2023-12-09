@@ -5,7 +5,7 @@ import { useState, useEffect } from 'react'
 import debounce from 'lodash.debounce'
 import { Logo } from './Logo'
 import { cssClasses } from '../utilClient'
-import './cssNav.css'
+import '@/app/_css/cssNav.css'
 
 type NavWrapProps = {
   name: string
