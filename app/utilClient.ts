@@ -66,21 +66,25 @@ export function getCalendar(year: number) {
 
   let season = seasons[6]
 
-  seasons.forEach((s, i) => {
+  seasons.some((s, i) => {
     if (s.date) {
-      if (isBefore(s.date, Date.now())) {
+      if (isBefore(Date.now(), s.date)) {
         if (i === 0 ) {
           season = {
             name: 'Christmas',
             date: new Date(`12/25/${year - 1}`),
             theme: 'White',
           }
+          return true
         } else if (i === seasons.length - 1) {
           season = seasons[i]
+          return true
         } else {
           season = seasons[i - 1]
+          return true
         }
       }
+      return false
     }
   })
 
