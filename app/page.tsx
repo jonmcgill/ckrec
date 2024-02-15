@@ -1,5 +1,6 @@
 import { Logo } from './_components/Logo'
 import { EventBlocks } from './_components/EventBlock'
+import Season from './_components/Season'
 import { info } from './_info'
 import '@/app/_css/cssHome.css'
 
@@ -24,7 +25,7 @@ export default function Home() {
               Seeking the Kingdom.
             </p>
             <span className="season text-accent text-shadow" id="Services">
-              ♱ <span>{info.season.name}, {info.year}</span> ♱
+              <Season />
             </span>
           </div>
         </div>

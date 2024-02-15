@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import Nav from './_components/Nav'
 import Footer from './_components/Footer'
-import { info } from './_info'
+import BodyWrap from './_components/BodyWrap'
 import '@/app/_css/cssGlobals.css'
 
 export const metadata: Metadata = {
@@ -16,11 +16,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={info.season.theme}>
+      <BodyWrap>
         <Nav />
         {children}
         <Footer />
-      </body>
+      </BodyWrap>
     </html>
   )
 }
