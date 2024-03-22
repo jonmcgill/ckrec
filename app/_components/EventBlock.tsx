@@ -19,7 +19,7 @@ function EventBlock(props: EventBlock) {
           </div>
           {item.events.map((ev) => (
             <div key={ev.join('')} className="flex between thin">
-              <span>{ev[0]}</span>
+              <span className={ev.length === 1 ? 'bold italic' : ''}>{ev[0]}</span>
               <span>{ev[1]}</span>
             </div>
           ))}

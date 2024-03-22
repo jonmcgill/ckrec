@@ -27,21 +27,24 @@ and seven grandchildren and lives with his wife, Sandy.
 
 ## Parish Staff
 
-- Layne Hilyer, Parish Administrator
+- Layne Hilyer **(Parish Administrator)**
 
 ## Parish Council
 
-- Fr. Wayne McNamara, Rector
-- Daschel Fortner, Senior Warden
-- Jenny Downey, Junior Warden
+- Fr. Wayne McNamara **(Rector)**
+- Daschel Fortner **(Senior Warden)**
+- Jenny Downey **(Junior Warden)**
 
 ## Parish Vestry
 
-- Daschel Fortner, Senior Warden
-- Jenny Downey, Junior Warden
-- Dan Hack, Treasurer
-- Jeff Brown, Sexton
-- Amanda McGill, Secretary
+- Daschel Fortner **(Senior Warden)**
+- Jenny Downey **(Junior Warden)**
+- Dan Hack **(Treasurer)**
+- Jeff Brown **(Sexton)**
+- Amanda McGill **(Secretary)**
 - Layne Hilyer
 - Zach Fehrman
 - Joe Cheatwood
+- Brian Skinn
+- Cassandra Conger
+- Aaron Sathyanesan
