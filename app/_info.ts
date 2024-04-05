@@ -1,3 +1,5 @@
+'use client'
+
 import { isDateBetween, getCalendar } from './utilClient'
 
 export type EventItem = {

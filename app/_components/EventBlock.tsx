@@ -1,3 +1,5 @@
+'use client'
+
 import { info, EventBlock } from '../_info'
 
 function EventBlock(props: EventBlock) {
@@ -11,14 +13,14 @@ function EventBlock(props: EventBlock) {
       <div className="center">
         <div className="line" />
       </div>
-      {items.map((item) => (
-        <div key={item.date} className="event-item">
+      {items.map((item, i) => (
+        <div key={`${i}-${item.date}`} className="event-item">
           <div className="flex between">
             <span className="bold">{item.date || item.day}</span>
             <span className="bold">{item.date ? item.day : ''}</span>
           </div>
-          {item.events.map((ev) => (
-            <div key={ev.join('')} className="flex between thin">
+          {item.events.map((ev, i) => (
+            <div key={`${i}-${ev.join('')}`} className="flex between thin">
               <span className={ev.length === 1 ? 'bold italic' : ''}>{ev[0]}</span>
               <span>{ev[1]}</span>
             </div>

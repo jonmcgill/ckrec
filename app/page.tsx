@@ -1,3 +1,5 @@
+'use client'
+
 import { Logo } from './_components/Logo'
 import { EventBlocks } from './_components/EventBlock'
 import Season from './_components/Season'
