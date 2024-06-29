@@ -3,7 +3,6 @@
 import { Logo } from './_components/Logo'
 import { EventBlocks } from './_components/EventBlock'
 import Season from './_components/Season'
-import { info } from './_info'
 import '@/app/_css/cssHome.css'
 
 export default function Home() {
@@ -34,6 +33,9 @@ export default function Home() {
       </header>
       <main className="bg-content">
         <div className="home-content content-wrap-narrow has-links-dark">
+          <p className="bold text-accent container small center">
+            Sunday School is out for the summer and will start back up at the end of August.
+          </p>
           <EventBlocks />
           <h2 className="prim center">Virtual Services</h2>
           <div className="center">
@@ -43,19 +45,8 @@ export default function Home() {
         <div className="home-content content-wrap-narrow has-links-dark">
           <p>
             If you are unable to join us at the sanctuary, you can participate in
-            a live stream of the service over <a href="https://zoom.us/download" target="_blank">Zoom</a>.
+            a live stream of the service on <a href="https://www.youtube.com/@CtkAV/live" target="_blank">YouTube</a>.
           </p>
-          <ol>
-            <li>
-              Make sure you have the Zoom client installed on your device
-            </li>
-            <li>
-              Request a password from <a href={`mailto:${info.contact.admin}`}>{info.contact.admin}</a>
-            </li>
-            <li>
-              On Sunday morning, join the virtual service
-            </li>
-          </ol>
         </div>
       </main>
     </>

@@ -19,7 +19,7 @@ const events  = {
   SundayWeekly: {
     day: 'Sunday',
     events: [
-      ['Children\'s Sunday School', '9:00 AM'],
+      // ['Children\'s Sunday School', '9:00 AM'],
       ['Holy Communion', '10:00 AM']
     ],
   } as EventItem,

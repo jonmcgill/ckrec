@@ -245,6 +245,12 @@ ul.clear li {
   text-rendering: optimizeLegibility;
 }
 
+.container {
+  padding: 1rem;
+  border: 2px solid;
+  border-radius: 0.25rem;
+}
+
 /*------
   Header
 ------*/
@@ -382,6 +388,9 @@ footer .tag {
 .bg-accent {
   background-color: var(--gold-1);
 }
+.bg-accent-overlay {
+  background-color: var(--go)
+}
 .text-accent {
   color: var(--gold-1);
   fill: var(--gold-1);
@@ -478,6 +487,10 @@ footer .tag {
     font-size: 20px;
   }
 
+  html .small {
+    font-size: 16px;
+  }
+
   .line {
     max-width: 200px;
   }
@@ -511,5 +524,8 @@ footer .tag {
 @media screen and (min-width: 1350px) {
   html {
     font-size: 22px;
+  }
+  html .small {
+    font-size: 18px;
   }
 }
