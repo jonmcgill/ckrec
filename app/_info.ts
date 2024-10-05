@@ -19,14 +19,21 @@ const events  = {
   SundayWeekly: {
     day: 'Sunday',
     events: [
-      // ['Children\'s Sunday School', '9:00 AM'],
+      ['Sunday School (All Ages)', '9:00 AM'],
       ['Holy Communion', '10:00 AM']
     ],
   } as EventItem,
   WednesdayWeekly: {
     day: 'Wednesday',
     events: [
+      ['Morning Prayer', '6:30 AM'],
       ['Evening Prayer', '7:00 PM']
+    ]
+  } as EventItem,
+  FridayWeekly: {
+    day: 'Friday',
+    events: [
+      ['Morning Prayer', '6:30 AM'],
     ]
   } as EventItem,
   AdventGreening: {
@@ -129,7 +136,8 @@ const standardEvents: EventBlock = {
   show: true,
   items: [
     events.SundayWeekly,
-    events.WednesdayWeekly
+    events.WednesdayWeekly,
+    events.FridayWeekly,
   ],
 }
 

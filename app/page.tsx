@@ -33,9 +33,9 @@ export default function Home() {
       </header>
       <main className="bg-content">
         <div className="home-content content-wrap-narrow has-links-dark">
-          <p className="bold text-accent container small center">
+          {/* <p className="bold text-accent container small center">
             Sunday School is out for the summer and will start back up at the end of August.
-          </p>
+          </p> */}
           <EventBlocks />
           <h2 className="prim center">Virtual Services</h2>
           <div className="center">

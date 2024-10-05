@@ -27,7 +27,7 @@ and seven grandchildren and lives with his wife, Sandy.
 
 ## Parish Staff
 
-- Layne Hilyer **(Parish Administrator)**
+- Jenny Downey **(Parish Administrator)**
 
 ## Parish Council
 
@@ -48,3 +48,4 @@ and seven grandchildren and lives with his wife, Sandy.
 - Brian Skinn
 - Cassandra Conger
 - Aaron Sathyanesan
+- Lisa Dault
