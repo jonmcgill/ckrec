@@ -76,13 +76,12 @@ export function getCalendar(year: number) {
             theme: 'White',
           }
           return true
-        } else if (i === seasons.length - 1) {
-          season = seasons[i]
-          return true
         } else {
           season = seasons[i - 1]
           return true
         }
+      } else if (i === seasons.length - 1) {
+        season = seasons[i]
       }
       return false
     }

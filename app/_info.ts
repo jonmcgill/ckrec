@@ -38,29 +38,36 @@ const events  = {
   } as EventItem,
   AdventGreening: {
     day: 'Sunday',
-    date: 'December 10, 2023',
+    date: 'December 8, 2024',
     events: [
       ['Greening of the Church', '4:00 PM'],
       ['Chili Cook-Off', '6:00 PM'],
     ]
   } as EventItem,
   AdventCaroling: {
-    day: 'Friday',
-    date: 'December 15, 2023',
+    day: 'Sunday',
+    date: 'December 21, 2024',
     events: [
-      ['NLS Neighborhood Caroling', '6:00 PM'],
+      ['Caroling at Brookdale', '6:00 PM'],
+    ]
+  } as EventItem,
+  AdventCaroling2: {
+    day: 'Saturday',
+    date: 'December 20, 2024',
+    events: [
+      ['St Lazarus Caroling', '6:00 PM'],
     ]
   } as EventItem,
   AdventLessonsAndCarols: {
-    day: 'Sunday',
-    date: 'December 24, 2023',
+    day: 'Tuesday',
+    date: 'December 24, 2024',
     events: [
       ['Christmas Eve Lessons & Carols', '6:30 PM']
     ]
   } as EventItem,
   ChristmasMorning: {
-    day: 'Monday',
-    date: 'December 25, 2023',
+    day: 'Wednesday',
+    date: 'December 25, 2024',
     events: [
       ['Christmas Morning Service', '9:00 AM']
     ]
@@ -146,6 +153,7 @@ const adventEvents: EventBlock = {
   show: calendar.season.name === 'Advent',
   items: [
     events.AdventGreening,
+    events.AdventCaroling2,
     events.AdventCaroling,
     events.AdventLessonsAndCarols,
     events.ChristmasMorning,
