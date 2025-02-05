@@ -76,6 +76,11 @@ export default function Nav() {
               ['/rec', 'REC'],
             ]}
           />
+          <div data-nav-wrap>
+            <a href="https://give.tithe.ly/?formId=9f6b92a5-6865-11ee-90fc-1260ab546d11" target="_blank" data-nav-top>
+              Give
+            </a>
+          </div>
         </div>
         {scrolled && (
           <Link href="/">
