@@ -41,11 +41,10 @@ and seven grandchildren and lives with his wife, Sandy.
 - Jenny Downey **(Junior Warden)**
 - Dan Hack **(Treasurer)**
 - Jeff Brown **(Sexton)**
-- Amanda McGill **(Secretary)**
+- Brian Skinn **(Secretary)**
 - Layne Hilyer
 - Zach Fehrman
 - Joe Cheatwood
-- Brian Skinn
 - Cassandra Conger
 - Aaron Sathyanesan
 - Lisa Dault

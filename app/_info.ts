@@ -87,23 +87,31 @@ const events  = {
       ['Ash Wednesday (Evening Service)', '7:00 PM'],
     ]
   } as EventItem,
+  HolyWeekPalmSunday: {
+    day: 'Sunday',
+    date: 'April 13, 2025',
+    events: [
+      ['Palm Sunday Holy Communion', '10:00AM']
+    ]
+  } as EventItem,
   HolyWeekGeneral: {
     day: 'Monday, Tuesday, Wednesday',
-    date: 'March 25-27, 2024',
+    date: 'April 14-16, 2025',
     events: [
-      ['Holy Week Service', '12:00PM']
+      ['Holy Communion Service', '12:00PM']
     ]
   } as EventItem,
   HolyWeekMeagerMeal: {
     day: 'Wednesday',
-    date: 'March 27, 2024',
+    date: 'April 16, 2025',
     events: [
-      ['Last Meager Meal', '6:00PM']
+      ['Last Meager Meal', '6:00PM'],
+      ['Evening Prayer', '7:00PM'],
     ]
   } as EventItem,
   HolyWeekMaundyThursday: {
     day: 'Thursday',
-    date: 'March 28, 2024',
+    date: 'April 17, 2025',
     events: [
       ['Supper of the Lamb', '6:00PM'],
       ['Maundy Thursday Service', '7:00PM'],
@@ -111,23 +119,23 @@ const events  = {
   } as EventItem,
   HolyWeekGoodFriday: {
     day: 'Friday',
-    date: 'March 29, 2024',
+    date: 'April 18, 2025',
     events: [
       ['Stations of the Cross', '11:00AM'],
       ['Seven Last Words', '12:00PM'],
-      ['Tenebrae', '8:00PM'],
+      ['Good Friday Tenebrae', '8:15PM'],
     ]
   } as EventItem,
   HolyWeekHolySaturday: {
     day: 'Saturday',
-    date: 'March 30, 2024',
+    date: 'April 19, 2025',
     events: [
       ['Easter Vigil and Celebration', '8:15PM'],
     ]
   } as EventItem,
   EasterSunday: {
     day: 'Sunday',
-    date: 'March 31, 2024',
+    date: 'April 20, 2025',
     events: [
       ['Easter Sunday Holy Communion', '10:00AM'],
       ['No Sunday School']
@@ -177,8 +185,9 @@ export const lentEvents: EventBlock = {
 
 export const holyWeekEvents: EventBlock = {
   title: 'Holy Week Services',
-  show: isDateBetween('3/21/2024', '4/1/2024'),
+  show: isDateBetween('3/21/2025', '4/21/2025'),
   items: [
+    events.HolyWeekPalmSunday,
     events.HolyWeekGeneral,
     events.HolyWeekMeagerMeal,
     events.HolyWeekMaundyThursday,
