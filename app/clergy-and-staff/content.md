@@ -33,16 +33,16 @@ and seven grandchildren and lives with his wife, Sandy.
 
 - Fr. Wayne McNamara **(Rector)**
 - Daschel Fortner **(Senior Warden)**
-- Jenny Downey **(Junior Warden)**
+- David Rowland **(Junior Warden)**
 
 ## Parish Vestry
 
 - Daschel Fortner **(Senior Warden)**
-- Jenny Downey **(Junior Warden)**
+- David Rowland **(Junior Warden)**
 - Dan Hack **(Treasurer)**
 - Jeff Brown **(Sexton)**
 - Brian Skinn **(Secretary)**
-- Layne Hilyer
+- Jenny Downey
 - Zach Fehrman
 - Joe Cheatwood
 - Cassandra Conger
