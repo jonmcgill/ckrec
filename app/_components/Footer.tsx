@@ -68,6 +68,9 @@ export default function Footer() {
               <li>
                 <Link href="/children-and-worship">Children & Worship</Link>
               </li>
+              <li>
+                <Link href="/Child_Protection_Policy.pdf" target="_blank">Child Protection Policy</Link>
+              </li>
             </ul>
           </div>
         </div>
