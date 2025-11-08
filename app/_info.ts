@@ -36,6 +36,13 @@ const events  = {
       ['Morning Prayer', '6:30 AM'],
     ]
   } as EventItem,
+  ChristTheKing: {
+    day: 'Sunday',
+    date: 'Novement 23, 2025',
+    events: [
+      ['Feast of Christ the King', '10:00 AM']
+    ]
+  },
   AdventGreening: {
     day: 'Sunday',
     date: 'December 8, 2024',
@@ -156,6 +163,14 @@ const standardEvents: EventBlock = {
   ],
 }
 
+const feastDays: EventBlock = {
+  title: 'Upcoming Feast Days',
+  show: true,
+  items: [
+    events.ChristTheKing
+  ]
+}
+
 const adventEvents: EventBlock = {
   title: 'Advent Events and Services',
   show: calendar.season.name === 'Advent',
@@ -209,6 +224,7 @@ export const info = {
   },
   ...calendar,
   events: [
+    feastDays,
     adventEvents,
     christmasEvents,
     lentEvents,
