@@ -26,7 +26,7 @@ const events  = {
   WednesdayWeekly: {
     day: 'Wednesday',
     events: [
-      ['Morning Prayer', '6:30 AM'],
+      // ['Morning Prayer', '6:30 AM'],
       ['Evening Prayer', '7:00 PM']
     ]
   } as EventItem,
@@ -159,7 +159,7 @@ const standardEvents: EventBlock = {
   items: [
     events.SundayWeekly,
     events.WednesdayWeekly,
-    events.FridayWeekly,
+    // events.FridayWeekly,
   ],
 }
 
