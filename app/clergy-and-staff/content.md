@@ -28,7 +28,7 @@ and seven grandchildren and lives with his wife, Sandy.
 ## Parish Staff
 
 - Jenny Downey **(Parish Administrator)**
-- Layne Hilyer **(Sacristan)**
+- Jacob Harris **(Sacristan)**
 - Susan Camerer **(Administrative Assistant)**
 
 ## Parish Council
