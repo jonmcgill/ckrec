@@ -45,7 +45,7 @@ const events  = {
   },
   AdventGreening: {
     day: 'Sunday',
-    date: 'December 8, 2024',
+    date: 'December 7, 2025',
     events: [
       ['Greening of the Church', '4:00 PM'],
       ['Chili Cook-Off', '6:00 PM'],
@@ -53,7 +53,7 @@ const events  = {
   } as EventItem,
   AdventCaroling: {
     day: 'Sunday',
-    date: 'December 21, 2024',
+    date: 'December 21, 2025',
     events: [
       ['Caroling at Brookdale', '6:00 PM'],
     ]
@@ -66,15 +66,15 @@ const events  = {
     ]
   } as EventItem,
   AdventLessonsAndCarols: {
-    day: 'Tuesday',
-    date: 'December 24, 2024',
+    day: 'Wednesday',
+    date: 'December 24, 2025',
     events: [
       ['Christmas Eve Lessons & Carols', '6:30 PM']
     ]
   } as EventItem,
   ChristmasMorning: {
-    day: 'Wednesday',
-    date: 'December 25, 2024',
+    day: 'Thursday',
+    date: 'December 25, 2025',
     events: [
       ['Christmas Morning Service', '9:00 AM']
     ]
@@ -171,12 +171,26 @@ const feastDays: EventBlock = {
   ]
 }
 
+const specialNote: EventBlock = {
+  title: 'Advent Sunday School',
+  show: true,
+  items: [
+    {
+      day: 'All of December',
+      events: [
+        ['Ages 4th grade and up will be practicing Advent choral music.', ''],
+        ['Regular Sunday School will resume in January.', ''],
+      ]
+    }
+  ]
+}
+
 const adventEvents: EventBlock = {
   title: 'Advent Events and Services',
   show: calendar.season.name === 'Advent',
   items: [
     events.AdventGreening,
-    events.AdventCaroling2,
+    // events.AdventCaroling2,
     events.AdventCaroling,
     events.AdventLessonsAndCarols,
     events.ChristmasMorning,
@@ -224,7 +238,8 @@ export const info = {
   },
   ...calendar,
   events: [
-    feastDays,
+    // feastDays,
+    specialNote,
     adventEvents,
     christmasEvents,
     lentEvents,
