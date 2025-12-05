@@ -41,9 +41,10 @@ and seven grandchildren and lives with his wife, Sandy.
 
 - Daschel Fortner **(Senior Warden)**
 - David Rowland **(Junior Warden)**
-- Dan Hack **(Treasurer)**
+- Josh Abernathy **(Treasurer)**
 - Jeff Brown **(Sexton)**
 - Brian Skinn **(Secretary)**
+- Dan Hack
 - Jenny Downey
 - Zach Fehrman
 - Joe Cheatwood
