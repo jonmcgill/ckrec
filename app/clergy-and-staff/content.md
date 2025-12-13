@@ -19,7 +19,7 @@ over 40 years. They have four adult children and 13 grandchildren.
 Fr. Wayne McNamara became rector of Christ the King in 1992 after 12 years of serving in special education.
 He was ordained in 1998 by the Association of Independent Covenant Churches and was received as
 a Presbyter in the Reformed Episcopal Church in 2000. He currently serves on the boards of the
-Children's Hunger Relief Fund, St. Lazarus Mission, and the Huffman Historic Neighborhood Association.
+Children's Hunger Relief Fund, St. Lazarus Mission, and the No Longer Strangers Refugee Ministry.
 In 1998, Fr. Wayne co-founded Dominion Academy of Dayton where he serves as Priest-in-Charge. His
 scholarly interests lie in liturgics, Anglican studies, and the Christian ascetical tradition, and
 in 2015, he was accepted as an oblate by the Order of Saint Benedict. Fr. Wayne has four children
