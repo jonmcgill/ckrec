@@ -27,8 +27,9 @@ and seven grandchildren and lives with his wife, Sandy.
 
 ## Parish Staff
 
-- Jenny Downey **(Parish Administrator)**
+- Jennifer Downey **(Parish Administrator)**
 - Jacob Harris **(Sacristan)**
+- Jeff Brown **(Sexton)**
 - Susan Camerer **(Administrative Assistant)**
 
 ## Parish Council
@@ -41,13 +42,10 @@ and seven grandchildren and lives with his wife, Sandy.
 
 - Daschel Fortner **(Senior Warden)**
 - David Rowland **(Junior Warden)**
-- Josh Abernathy **(Treasurer)**
-- Jeff Brown **(Sexton)**
+- Joshua Abernathy **(Treasurer)**
 - Brian Skinn **(Secretary)**
-- Dan Hack
-- Jenny Downey
-- Zach Fehrman
-- Joe Cheatwood
-- Cassandra Conger
 - Aaron Sathyanesan
+- Cassandra Conger
+- Jennifer Downey
 - Lisa Dault
+- Zach Fehrman
