@@ -88,7 +88,7 @@ const events  = {
   } as EventItem,
   LentAshWednesday: {
     day: 'Wednesday',
-    date: 'March 2, 2022',
+    date: 'February 18, 2026',
     events: [
       ['Ash Wednesday (Morning Service)', '7:00 AM'],
       ['Ash Wednesday (Evening Service)', '7:00 PM'],
@@ -205,9 +205,9 @@ const christmasEvents: EventBlock = {
 
 export const lentEvents: EventBlock = {
   title: 'Lenten Services',
-  show: isDateBetween('2/20/2022', '3/3/2022'),
+  show: isDateBetween('2/10/2026', '2/20/2026'),
   items: [
-    events.LentShroveTuesday,
+    // events.LentShroveTuesday,
     events.LentAshWednesday,
   ]
 }
@@ -239,7 +239,7 @@ export const info = {
   ...calendar,
   events: [
     // feastDays,
-    specialNote,
+    // specialNote,
     adventEvents,
     christmasEvents,
     lentEvents,
