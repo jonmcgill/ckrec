@@ -96,21 +96,21 @@ const events  = {
   } as EventItem,
   HolyWeekPalmSunday: {
     day: 'Sunday',
-    date: 'April 13, 2025',
+    date: 'March 29, 2026',
     events: [
       ['Palm Sunday Holy Communion', '10:00AM']
     ]
   } as EventItem,
   HolyWeekGeneral: {
     day: 'Monday, Tuesday, Wednesday',
-    date: 'April 14-16, 2025',
+    date: 'March 30 - April 1, 2025',
     events: [
       ['Holy Communion Service', '12:00PM']
     ]
   } as EventItem,
   HolyWeekMeagerMeal: {
     day: 'Wednesday',
-    date: 'April 16, 2025',
+    date: 'April 1, 2026',
     events: [
       ['Last Meager Meal', '6:00PM'],
       ['Evening Prayer', '7:00PM'],
@@ -118,7 +118,7 @@ const events  = {
   } as EventItem,
   HolyWeekMaundyThursday: {
     day: 'Thursday',
-    date: 'April 17, 2025',
+    date: 'April 2, 2026',
     events: [
       ['Supper of the Lamb', '6:00PM'],
       ['Maundy Thursday Service', '7:00PM'],
@@ -126,7 +126,7 @@ const events  = {
   } as EventItem,
   HolyWeekGoodFriday: {
     day: 'Friday',
-    date: 'April 18, 2025',
+    date: 'April 3, 2026',
     events: [
       ['Stations of the Cross', '11:00AM'],
       ['Seven Last Words', '12:00PM'],
@@ -135,14 +135,14 @@ const events  = {
   } as EventItem,
   HolyWeekHolySaturday: {
     day: 'Saturday',
-    date: 'April 19, 2025',
+    date: 'April 4, 2026',
     events: [
       ['Easter Vigil and Celebration', '8:15PM'],
     ]
   } as EventItem,
   EasterSunday: {
     day: 'Sunday',
-    date: 'April 20, 2025',
+    date: 'April 5, 2026',
     events: [
       ['Easter Sunday Holy Communion', '10:00AM'],
       ['No Sunday School']
@@ -214,7 +214,7 @@ export const lentEvents: EventBlock = {
 
 export const holyWeekEvents: EventBlock = {
   title: 'Holy Week Services',
-  show: isDateBetween('3/21/2025', '4/21/2025'),
+  show: isDateBetween('3/14/2026', '4/6/2026'),
   items: [
     events.HolyWeekPalmSunday,
     events.HolyWeekGeneral,
