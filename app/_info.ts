@@ -130,14 +130,14 @@ const events  = {
     events: [
       ['Stations of the Cross', '11:00AM'],
       ['Seven Last Words', '12:00PM'],
-      ['Good Friday Tenebrae', '8:15PM'],
+      ['Good Friday Tenebrae', '8:00PM'],
     ]
   } as EventItem,
   HolyWeekHolySaturday: {
     day: 'Saturday',
     date: 'April 4, 2026',
     events: [
-      ['Easter Vigil and Celebration', '8:15PM'],
+      ['Easter Vigil and Celebration', '8:00PM'],
     ]
   } as EventItem,
   EasterSunday: {
