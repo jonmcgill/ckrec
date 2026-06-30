@@ -1,14 +1,25 @@
 ## Bishop
 
 <div class="img-float clear">
-  <img src="/images/clergy-bp-manto.jpeg" alt="Bishop Manto" />
+  <img src="/images/clergy-bp-grote.jpeg" alt="Bishop Grote" />
 </div>
 
-The Rt. Rev. Peter Manto is rector of Trinity Church and Bishop Ordinary of the REC's Diocese
-of the Central States. Bp. Manto has been a parish pastor for over 40 years. He was the
-church-planter for the non-denominational church which became Trinity Church and guided its 
-move into the Reformed Episcopal Church. Bp. Manto has been married to his wife Janice for
-over 40 years. They have four adult children and 13 grandchildren.
+Bishop Jason Robert Grote was born outside Philadelphia, Pennsylvania, and spent his
+formative years in New Jersey after his father, the late Bishop Royal U. Grote Jr.,
+accepted a call to serve as rector of St. Luke’s Reformed Episcopal Church. Before
+entering ordained ministry, he worked in banking and accounting, later attending
+Reformed Episcopal Seminary and earning a Bachelor of Business Administration
+degree in Computer Information Systems from the University of Houston Downtown.
+
+Ordained after relocating to Texas, Bishop Grote served for 28 years in the Diocese of
+Mid-America, including as Rector of St. Matthias Anglican Church in Katy, Texas, from
+2000 to 2026. He also served on numerous diocesan and national committees and
+contributed his financial and technology experience as treasurer for several church
+organizations and as webmaster for the Diocese and National Church.
+
+Bishop Grote and his wife, Elizabeth “Liz,” were married in 2004 and have two children,
+Aidan and Avery. In October 2024, he was elected Bishop Coadjutor of the Diocese of
+the Central States, consecrated on June 4, 2025, and installed as Ordinary on June 10, 2026. He now resides in Xenia, Ohio.
 
 ## Parish Rector
 
